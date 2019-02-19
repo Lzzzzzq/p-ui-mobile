@@ -1,0 +1,55 @@
+@import './color.less';
+
+// 主色
+@primary-color: @blue-1;
+
+// 文字颜色
+@text-color-base: @gray-2;
+@text-color-sec: @gray-4;
+@text-color-ass: @gray-6;
+@text-color-white: @white-1;
+
+@text-color-base-dark: @gray-10;
+@text-color-sec-dark: @gray-12;
+@text-color-ass-dark: @gray-3;
+
+// 分割线颜色
+@line-color-deep: @gray-5;
+@line-color-medium: @gray-7;
+@line-color-light: @gray-8;
+
+// 背景颜色
+@bg-color-white: @gray-9;
+@bg-color-dark: @gray-16;
+@bg-color-pop: rgba(0, 0, 0, 0.75);
+
+// 圆角
+@border-radius-base: 4px;
+@border-radius-lg: @border-radius-base + 2px;
+@border-radius-sm: @border-radius-base - 2px;
+
+// 字号
+@font-size-base: 14px;
+@font-size-sm: @font-size-base - 2px;
+@font-size-lg: @font-size-base + 2px;
+
+// 最高层级
+@z-index-mask: 999;
+
+// 字体
+@font-family-base: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif,
+"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+@font-family-code: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+
+// 弹出框距离顶部位置
+@pop-to-top: 38%;
+
+.mask() {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
