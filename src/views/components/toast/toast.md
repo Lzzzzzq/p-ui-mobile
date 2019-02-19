@@ -34,7 +34,10 @@ export default {
       this.$toast.info({
         msg: 'Toast 轻提示',
         mask: true,
-        duration: 3000
+        duration: 1000,
+        onClose: function () {
+          console.log('close')
+        }
       })
     },
 
