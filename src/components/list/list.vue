@@ -11,7 +11,7 @@
 
 <script>
 import config from '../../config'
-import Tree from '../tree/index'
+import Tree from '../../components/tree/index'
 
 export default {
   name: 'List',
@@ -44,7 +44,7 @@ export default {
 .wrap {
   flex: 0 0 260px;
   border-right: 1px solid @line-color-light;
-  padding: 40px 0 0 40px;
+  padding-top: 40px;
   box-sizing: border-box;
 }
 </style>
@@ -60,9 +60,20 @@ export default {
     font-size: @font-size-base;
     color: @text-color-base;
     cursor: pointer;
+    padding-left: 40px;
   }
   .treeNodeChildWrap {
-    padding-left: 16px;
+
+    .treeNode {
+      padding-left: 56px;
+    }
+    .treeNodeChildWrap {
+
+      .treeNode {
+        padding-left: 72px;
+      }
+    }
+    // padding-left: 16px;
   }
   .treeParentNode {
     color: @text-color-sec;
@@ -73,8 +84,21 @@ export default {
     cursor: pointer;
   }
   .treeNodeActive {
-    // background-color: rgba(70, 145, 238, 0.7);
-    background: linear-gradient(to right, #fff , rgba(70, 145, 238, 0.3));
+    position: relative;
+    transition: all 0.3s;
+    background-color: #e6f7ff;
+    color: #1890ff;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 3px;
+      background-color: #1890ff;
+    }
   }
 }
 </style>

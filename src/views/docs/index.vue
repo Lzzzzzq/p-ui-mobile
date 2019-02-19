@@ -12,9 +12,9 @@
 export default {
   name: 'Docs',
   components: {
-    Header: () => import('../components/docs/header'),
-    List: () => import('../components/docs/list'),
-    Intro: () => import('../components/docs/intro')
+    Header: () => import('@vc/header/header'),
+    List: () => import('@vc/list/list'),
+    Intro: () => import('@vc/intro/intro')
   }
 }
 </script>
@@ -22,7 +22,8 @@ export default {
 <style scoped lang="less">
 .docsWrap {
   position: relative;
-  width: 100%;
+  min-width: 1440px;
+  margin-right: 40px;
   height: 100vh;
   display: flex;
   flex-direction: column;

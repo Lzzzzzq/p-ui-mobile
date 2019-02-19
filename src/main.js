@@ -3,13 +3,11 @@ import App from './App.vue'
 import router from './router'
 
 import animated from 'animate.css'
-import Toast from '../components/toast'
-import Icon from '../components/icon'
+import NewsUI from '@NewsUI'
 
 Vue.config.productionTip = false
 
-Vue.use(Toast)
-Vue.use(Icon)
+Vue.use(NewsUI)
 Vue.use(animated)
 
 new Vue({

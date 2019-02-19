@@ -66,20 +66,22 @@ export default {
 </script>
 
 <style lang="less">
-@import '../../components/style/common.less';
+@import '../../assets/common.less';
 
 .mdWrap {
-  padding: 20px 60px;
+  padding: 20px 40px 20px 40px;
   font-family: @font-family-base;
   font-size: @font-size-base;
   color: @text-color-base;
+  flex: 1;
 
   code {
     display: block;
     overflow-x: auto;
     padding: 16px;
     background: @bg-color-dark;
-    color: @text-color-base-dark;
+    color: @text-color-white;
+    // font-family: @font-family-base;
     font-family: @font-family-code;
     border-radius: @border-radius-base;
   }
@@ -88,24 +90,38 @@ export default {
     border-collapse: collapse;
     border-spacing: 0;
     empty-cells: show;
-    border: 1px solid @line-color-light;
+    border: 1px solid @line-color-base;
     width: 100%;
     margin-bottom: 24px;
     color: @text-color-base;
 
     th {
-      border: 1px solid @line-color-light;
+      border: 1px solid @line-color-base;
       padding: 8px 16px;
       text-align: left;
       white-space: nowrap;
       color: @text-color-base;
       font-weight: 600;
+      background-color: @bg-color-sec;
     }
     td {
       border: 1px solid #e9e9e9;
       padding: 8px 16px;
       text-align: left;
     }
+  }
+
+  h1 {
+    line-height: 40px;
+    margin-bottom: 24px;
+    margin-top: 8px;
+    font-size: 28px;
+  }
+  h2 {
+    margin: 1.6em 0 .6em;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.8;
   }
 }
 </style>

@@ -8,12 +8,23 @@ export default new Router({
     {
       path: '/docs',
       name: 'docs',
-      component: () => import(/* webpackChunkName: "about" */ './views/docs.vue'),
+      component: () => import(/* webpackChunkName: "about" */ './views/docs/index.vue'),
       children: [
         {
           path: 'toast',
-          name: 'toast',
-          component: () => import('./views/components/toast.vue')
+          name: 'toastDoc',
+          component: () => import('./views/components/toast/index.vue')
+        }
+      ]
+    }, {
+      path: '/demo',
+      name: 'demo',
+      component: () => import('@vc/demo/wrap.vue'),
+      children: [
+        {
+          path: 'toast',
+          name: 'toastDemo',
+          component: () => import('./views/components/toast/demo.vue')
         }
       ]
     }
