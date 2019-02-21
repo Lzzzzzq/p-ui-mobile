@@ -10,6 +10,7 @@
   "dependencies": {
     "animate.css": "^3.7.0",
     "highlight.js": "^9.14.2",
+    "html-loader": "^0.5.5",
     "marked": "^0.6.0",
     "text-loader": "^0.0.1",
     "vue": "^2.5.22",

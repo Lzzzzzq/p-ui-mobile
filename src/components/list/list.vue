@@ -46,6 +46,7 @@ export default {
   border-right: 1px solid @line-color-light;
   padding-top: 40px;
   box-sizing: border-box;
+  overflow-y: auto;
 }
 </style>
 <style lang="less">

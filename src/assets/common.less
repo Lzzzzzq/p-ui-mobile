@@ -14,3 +14,21 @@
 @bg-color-dark: #202022;
 
 @border-radius-base: 4px;
+
+
+@scroll-bar-width: 7px;
+
+::-webkit-scrollbar-track-piece{
+  width: @scroll-bar-width;
+}
+
+::-webkit-scrollbar{
+  width: @scroll-bar-width;
+  height: 0; 
+}
+
+::-webkit-scrollbar-thumb{
+  height: 50px;
+  border-radius: @scroll-bar-width / 2; 
+  background-color: rgba(0, 0, 0, 0.2);  
+}

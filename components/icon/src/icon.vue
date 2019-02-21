@@ -9,7 +9,8 @@ export default {
   name: 'NumIcon',
   props: {
     type: {
-      type: String
+      type: String,
+      default: () => ('')
     }
   }
 }

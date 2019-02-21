@@ -13,7 +13,7 @@ export default {
             {
               name: 'Icon 图标',
               id: 'icon',
-              path: '/docs'
+              path: '/docs/icon'
             }
           ]
         }, {

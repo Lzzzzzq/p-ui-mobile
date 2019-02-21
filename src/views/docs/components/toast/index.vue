@@ -1,5 +1,5 @@
 <template>
-  <div class="docsComponentMdWrap">
+  <div>
     <Md :mdData="mdData"></Md>
     <Demo src="/demo/toast"></Demo>
   </div>
@@ -23,10 +23,3 @@ export default {
   }
 }
 </script>
-
-<style lang="less">
-.docsComponentMdWrap {
-  display: flex;
-  flex-direction: row;
-}
-</style>

@@ -14,6 +14,12 @@ module.exports = {
       .use('text-loader')
       .loader('text-loader')
       .end()
+    config.module
+      .rule('html')
+      .test(/\.html$/)
+      .use('html-loader')
+      .loader('html-loader')
+      .end()
 
     config.resolve.alias
       .set('@src', resolve('src'))

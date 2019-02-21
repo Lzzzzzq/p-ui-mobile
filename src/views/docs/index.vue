@@ -23,7 +23,7 @@ export default {
 .docsWrap {
   position: relative;
   min-width: 1440px;
-  margin-right: 40px;
+  // margin-right: 40px;
   height: 100vh;
   display: flex;
   flex-direction: column;

@@ -12,6 +12,8 @@ export default {
 </script>
 
 <style lang="less">
+@import './assets/common.less';
+
 html,body {
   margin: 0;
   padding: 0;
