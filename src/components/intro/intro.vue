@@ -3,10 +3,11 @@
 
     <transition
       name="fade"
-      enter-active-class="animated fadeIn faster"
-      leave-active-class="animated fadeOut faster"
+      enter-active-class="animated fadeIn"
     >
-      <router-view></router-view>
+      <keep-alive>
+        <router-view></router-view>
+      </keep-alive>
     </transition>
   </div>
 </template>

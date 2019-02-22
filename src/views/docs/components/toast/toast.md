@@ -1,4 +1,4 @@
-# Toast 轻提示
+# 轻提示 Toast
 
 轻提示组件，入参可为字符串或对象。
 
@@ -35,6 +35,7 @@ export default {
         msg: 'Toast 轻提示',
         mask: true,
         duration: 1000,
+        top: '10px',
         onClose: function () {
           console.log('close')
         }
@@ -61,4 +62,5 @@ export default {
 | msg | 弹框文字 | string | '提示' |
 | mask | 蒙层 | boolean | false |
 | duration | 持续时间 | number | 2000 |
+| top | 距离顶部位置 | string | 38% |
 | onClose | 关闭后回调 | function | |

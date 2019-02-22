@@ -84,6 +84,7 @@ export default {
     // font-family: @font-family-base;
     font-family: @font-family-code;
     border-radius: @border-radius-base;
+    line-height: 1.5;
   }
 
   table {

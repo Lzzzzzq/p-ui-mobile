@@ -2,8 +2,8 @@ export default {
   docList: [
     {
       name: '快速上手',
-      id: 'quick',
-      path: ''
+      path: '/docs',
+      id: '/docs'
     }, {
       name: 'Components',
       child: [
@@ -12,8 +12,8 @@ export default {
           child: [
             {
               name: 'Icon 图标',
-              id: 'icon',
-              path: '/docs/icon'
+              path: '/docs/icon',
+              id: '/docs/icon'
             }
           ]
         }, {
@@ -21,8 +21,8 @@ export default {
           child: [
             {
               name: 'Toast 轻提示',
-              id: 'toast',
-              path: '/docs/toast'
+              path: '/docs/toast',
+              id: '/docs/toast'
             }
           ]
         }

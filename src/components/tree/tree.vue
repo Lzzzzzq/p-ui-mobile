@@ -38,11 +38,11 @@ export default {
     },
     rootCls: {
       type: String,
-      default: () => ('')
+      default: () => ''
     },
     activeCls: {
       type: String,
-      default: () => ('')
+      default: () => ''
     },
     index: {
       type: Number

@@ -24,14 +24,14 @@ export default {
       activeId: ''
     }
   },
+  mounted: function () {
+    this.activeId = this.$route.path
+  },
   methods: {
     handleNodeClick: function ({ path, id }) {
       if (path) {
         this.$router.push(path)
-      }
-      if (id) {
-        console.log(id)
-        this.activeId = id
+        this.activeId = path
       }
     }
   }
@@ -62,6 +62,12 @@ export default {
     color: @text-color-base;
     cursor: pointer;
     padding-left: 40px;
+    transition: all 0.3s;
+
+    &:after {
+      transition: all 0.5s;
+      content: '';
+    }
   }
   .treeNodeChildWrap {
 
@@ -86,7 +92,6 @@ export default {
   }
   .treeNodeActive {
     position: relative;
-    transition: all 0.3s;
     background-color: #e6f7ff;
     color: #1890ff;
 

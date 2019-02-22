@@ -1,6 +1,7 @@
 <template>
   <div class="numToastWrap" :style="{
-    'pointer-events': mask ? 'auto' : 'none'
+    'pointer-events': mask ? 'auto' : 'none',
+    'padding-top': top
   }">
     <transition
       name="fade"
@@ -37,7 +38,8 @@ export default {
       mask: false,
       icon: false,
       iconType: '',
-      type: 'info'
+      type: 'info',
+      top: '38%'
     }
   },
   watch: {

@@ -1,28 +1,29 @@
 <template>
-  <div>
+  <div class="iconDocsWrap">
+    <Md :mdData="mdData"></Md>
     <Icons :list="fontList"></Icons>
-    <!-- <Md :mdData="mdData"></Md>
-    <Demo src="/demo/toast"></Demo> -->
+    <!-- <Demo src="/demo/toast"></Demo> -->
   </div>
 </template>
 
 <script>
-// import Md from '@vc/md'
+import Md from '@vc/md'
 // import Demo from '@vc/demo'
-// import mdData from './toast.md'
+import mdData from './icon.md'
 import Icons from './icons'
 import cont from '@NewsUI/_util/iconfont/demo_fontclass.html'
 
 export default {
   name: 'IconDocs',
   components: {
-    Icons
-    // Md,
+    Icons,
+    Md
     // Demo
   },
   data () {
     return {
-      fontList: []
+      fontList: [],
+      mdData
     }
   },
   mounted: function () {
@@ -37,3 +38,9 @@ export default {
   }
 }
 </script>
+<style lang="less">
+.iconDocsWrap {
+  box-sizing: border-box;
+  flex-direction: column!important;
+}
+</style>

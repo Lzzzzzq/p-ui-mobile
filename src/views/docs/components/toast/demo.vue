@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'Demo',
+  name: 'ToastDemo',
   methods: {
     handleToastInfo: function () {
       this.$toast.info('Toast 轻提示')
@@ -20,6 +20,7 @@ export default {
         msg: 'Toast 轻提示 带蒙层',
         mask: true,
         duration: 1000,
+        top: '10px',
         onClose: function () {
           console.log('close')
         }

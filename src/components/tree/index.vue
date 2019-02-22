@@ -21,15 +21,15 @@ export default {
   props: {
     data: {
       type: Array,
-      default: () => ([])
+      default: () => []
     },
     activeCls: {
       type: String,
-      default: () => ('')
+      default: () => ''
     },
     activeId: {
       type: String,
-      default: () => ('')
+      default: () => ''
     }
   },
   components: {

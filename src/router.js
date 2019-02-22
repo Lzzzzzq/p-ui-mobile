@@ -8,34 +8,34 @@ export default new Router({
     {
       path: '/docs',
       name: 'docs',
-      component: () => import('./views/docs/index.vue'),
+      component: () => import(/* webpackChunkName: "doc" */ './views/docs/index.vue'),
       children: [
         {
           path: 'toast',
           name: 'toastDoc',
-          component: () => import('./views/docs/components/toast/index.vue')
+          component: () => import(/* webpackChunkName: "toastDoc" */ './views/docs/components/toast/index.vue')
         },
         {
           path: 'icon',
           name: 'iconDoc',
-          component: () => import('./views/docs/components/icon/index.vue')
+          component: () => import(/* webpackChunkName: "iconDoc" */ './views/docs/components/icon/index.vue')
         }
       ]
     }, {
       path: '/demo',
       name: 'demo',
-      component: () => import('@vc/demo/wrap.vue'),
+      component: () => import(/* webpackChunkName: "demo" */ '@vc/demo/wrap.vue'),
       children: [
         {
           path: 'toast',
           name: 'toastDemo',
-          component: () => import('./views/docs/components/toast/demo.vue')
+          component: () => import(/* webpackChunkName: "toastDemo" */ './views/docs/components/toast/demo.vue')
+        },
+        {
+          path: 'icon',
+          name: 'iconDemo',
+          component: () => import(/* webpackChunkName: "iconDemo" */ './views/docs/components/icon/demo.vue')
         }
-        // {
-        //   path: 'icon',
-        //   name: 'iconDemo',
-        //   component: () => import('./views/docs/components/icon/demo.vue')
-        // }
       ]
     }
     // {
