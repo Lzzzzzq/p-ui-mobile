@@ -15,12 +15,12 @@ Vue.use(Toast)
 <!-- *.vue -->
 
 <template>
-  <div class="demoWrap">
+  <NumWingBlank>
     <button @click="handleToastInfo">弹个框</button>
     <button @click="handleToastInfoMask">弹个带蒙层的框</button>
     <button @click="handleToastSuccess">弹个成功框</button>
     <button @click="handleToastError">弹个失败框</button>
-  </div>
+  </NumWingBlank>
 </template>
 
 <script>

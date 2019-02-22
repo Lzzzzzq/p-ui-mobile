@@ -1,8 +1,10 @@
 import Toast from './toast'
-import Icon from './icon/src/icon'
+import Icon from './icon/src/index'
+import WingBlank from './wingBlank/src/index'
 
 const components = [
-  Icon
+  Icon,
+  WingBlank
 ]
 
 const methods = [
@@ -27,7 +29,8 @@ const NewsUIMobile = {
   version: '0.0.1',
   install,
   Toast,
-  Icon
+  Icon,
+  WingBlank
 }
 
 export default NewsUIMobile

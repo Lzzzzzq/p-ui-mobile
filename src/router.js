@@ -19,6 +19,16 @@ export default new Router({
           path: 'icon',
           name: 'iconDoc',
           component: () => import(/* webpackChunkName: "iconDoc" */ './views/docs/components/icon/index.vue')
+        },
+        {
+          path: 'button',
+          name: 'buttonDoc',
+          component: () => import(/* webpackChunkName: "buttonDoc" */ './views/docs/components/button/index.vue')
+        },
+        {
+          path: 'wingBlank',
+          name: 'wingBlankDoc',
+          component: () => import(/* webpackChunkName: "wingBlankDoc" */ './views/docs/components/wingBlank/index.vue')
         }
       ]
     }, {
@@ -35,6 +45,16 @@ export default new Router({
           path: 'icon',
           name: 'iconDemo',
           component: () => import(/* webpackChunkName: "iconDemo" */ './views/docs/components/icon/demo.vue')
+        },
+        {
+          path: 'button',
+          name: 'buttonDemo',
+          component: () => import(/* webpackChunkName: "buttonDemo" */ './views/docs/components/button/demo.vue')
+        },
+        {
+          path: 'wingBlank',
+          name: 'wingBlankDemo',
+          component: () => import(/* webpackChunkName: "wingBlankDemo" */ './views/docs/components/wingBlank/demo.vue')
         }
       ]
     }
