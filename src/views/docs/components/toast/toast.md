@@ -16,15 +16,20 @@ Vue.use(Toast)
 
 <template>
   <NumWingBlank>
-    <button @click="handleToastInfo">弹个框</button>
-    <button @click="handleToastInfoMask">弹个带蒙层的框</button>
-    <button @click="handleToastSuccess">弹个成功框</button>
-    <button @click="handleToastError">弹个失败框</button>
+    <div style="height: 20px;"></div>
+    <NumButton @click="handleToastInfo" type="primary">弹个框</NumButton>
+    <div style="height: 20px;"></div>
+    <NumButton @click="handleToastInfoMask" type="primary">弹个带蒙层的框，自定义高度</NumButton>
+    <div style="height: 20px;"></div>
+    <NumButton @click="handleToastSuccess" type="primary">弹个成功框</NumButton>
+    <div style="height: 20px;"></div>
+    <NumButton @click="handleToastError" type="primary">弹个失败框</NumButton>
   </NumWingBlank>
 </template>
 
 <script>
 export default {
+  name: 'ToastDemo',
   methods: {
     handleToastInfo: function () {
       this.$toast.info('Toast 轻提示')
@@ -32,7 +37,7 @@ export default {
 
     handleToastInfoMask: function () {
       this.$toast.info({
-        msg: 'Toast 轻提示',
+        msg: 'Toast 轻提示 带蒙层',
         mask: true,
         duration: 1000,
         top: '10px',
@@ -45,7 +50,7 @@ export default {
     handleToastSuccess: function () {
       this.$toast.success('提交成功')
     },
-    
+
     handleToastError: function () {
       this.$toast.error('提交成功')
     }
@@ -62,5 +67,5 @@ export default {
 | msg | 弹框文字 | string | '提示' |
 | mask | 蒙层 | boolean | false |
 | duration | 持续时间 | number | 2000 |
-| top | 距离顶部位置 | string | 38% |
+| top | 距离顶部位置 | string | '38%' |
 | onClose | 关闭后回调 | function | |
