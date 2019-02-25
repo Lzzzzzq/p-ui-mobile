@@ -74,7 +74,12 @@ export default {
   font-size: @font-size-base;
   color: @text-color-base;
   flex: 1;
+  box-sizing: border-box;
 
+  pre {
+    word-wrap: break-word;
+    white-space:pre-wrap;
+  }
   code {
     display: block;
     overflow-x: auto;
@@ -85,6 +90,8 @@ export default {
     font-family: @font-family-code;
     border-radius: @border-radius-base;
     line-height: 1.5;
+    box-sizing: border-box;
+    width: 100%;
   }
 
   table {

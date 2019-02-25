@@ -47,6 +47,7 @@ export default {
   padding-top: 40px;
   box-sizing: border-box;
   overflow-y: auto;
+  background-color: #fff;
 }
 </style>
 <style lang="less">
