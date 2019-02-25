@@ -1,48 +1,94 @@
-@import '../../style/common.less';
+@import '../../style/index.less';
 
-.numBtnWrap {
-  border-radius: @border-radius-base;
-  height: @btn-size-lg;
-  line-height: @btn-size-lg;
-  // text-align: center;
-  background-color: #fff;
-  border: @btn-bd-base;
-  box-sizing: border-box;
-  display: flex;
-  text-decoration: none;
-  font-family: @font-family-base;
-  font-size: @font-size-base;
-  outline: none;
-  justify-content: center;
-  text-align: justify;
-  align-items: center;
-}
-.numBtnDisabled {
-  opacity: 0.6;
-  color: @btn-text-color-disabled;
-}
-.primaryNumBtn {
-  border: 0;
-  background-color: @primary-color;
-  color: #fff;
-}
+@btn-prefix-cls: ~'@{prefix-cls}-btn';
+@btn-size-base: 28px;
+@btn-color-primary-active: #d12b2b;
+@btn-color-disabled: #ccc;
 
-.defaultNumBtn.numBtnActive {
-  background-color: @btn-bg-active!important;
+.@{btn-prefix-cls} {
+
+  &-wrap {
+    border-radius: @border-radius-base;
+    height: @btn-size-base;
+    line-height: @btn-size-base;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  // 默认状态
+  &-wrap&-default {
+    background-color: transparent;
+    border: @hd solid @primary-color;
+    color: @primary-color;
+  }
+  &-wrap&-primary {
+    background-color: @primary-color;
+    color: @text-color-white;
+    border: @hd solid @primary-color;
+  }
+
+  // 激活状态
+  &-active&-default {
+    background-color: @primary-color;
+    color: @text-color-white;
+  }
+  &-active&-primary {
+    background-color: @btn-color-primary-active;
+    border: @hd solid @btn-color-primary-active;
+  }
+  &-wrap&-disabled {
+    background-color: @btn-color-disabled;
+    color: @text-color-white;
+    border: @hd solid @btn-color-disabled;
+  }
+  &-inline {
+    display: inline-block;
+    padding: 0 12px;
+  }
 }
-.primaryNumBtn.numBtnActive {
-  opacity: 0.85;
-}
-.numBtnInline {
-  display: inline-block;
-  padding: 0 16px;
-}
-.numBtnSmall {
-  height: @btn-size-sm;
-  line-height: @btn-size-sm;
-}
-.numBtnIcon {
-  margin-right: 8px;
-}
-.numBtnText {
-}
+// .numBtnWrap {
+//   border-radius: @border-radius-base;
+//   height: @btn-size-lg;
+//   line-height: @btn-size-lg;
+//   // text-align: center;
+//   background-color: #fff;
+//   border: @btn-bd-base;
+//   box-sizing: border-box;
+//   display: flex;
+//   text-decoration: none;
+//   font-family: @font-family-base;
+//   font-size: @font-size-base;
+//   outline: none;
+//   justify-content: center;
+//   text-align: justify;
+//   align-items: center;
+// }
+// .numBtnDisabled {
+//   opacity: 0.6;
+//   color: @btn-text-color-disabled;
+// }
+// .primaryNumBtn {
+//   border: 0;
+//   background-color: @primary-color;
+//   color: #fff;
+// }
+
+// .defaultNumBtn.numBtnActive {
+//   background-color: @btn-bg-active!important;
+// }
+// .primaryNumBtn.numBtnActive {
+//   opacity: 0.85;
+// }
+// .numBtnInline {
+//   display: inline-block;
+//   padding: 0 16px;
+// }
+// .numBtnSmall {
+//   height: @btn-size-sm;
+//   line-height: @btn-size-sm;
+// }
+// .numBtnIcon {
+//   margin-right: 8px;
+// }
+// .numBtnText {
+// }

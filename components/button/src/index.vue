@@ -1,11 +1,11 @@
 <template>
   <a
-    class="numBtnWrap"
     :class="{
-      [`${type}NumBtn`]: true,
-      'numBtnActive': active,
-      'numBtnDisabled': disabled,
-      'numBtnInline': inline,
+      [`${prefixCls.button}-wrap`]: true,
+      [`${prefixCls.button}-${type}`]: true,
+      [`${prefixCls.button}-active`]: active,
+      [`${prefixCls.button}-disabled`]: disabled,
+      [`${prefixCls.button}-inline`]: inline,
       'numBtnSmall': size === 'small'
     }"
     @touchstart="handleTouchStart"
@@ -18,16 +18,18 @@
 
     @click="handleClick"
   >
-    <Icon v-if="icon" :type="icon" class="numBtnIcon"></Icon>
+    <!-- <Icon v-if="icon" :type="icon" class="numBtnIcon"></Icon> -->
     <span class="numBtnText"><slot></slot></span>
   </a>
 </template>
 
 <script>
+import prefixCls from '../../_util/prefixCls'
+
 export default {
   name: 'NumButton',
   components: {
-    Icon: () => import('../../icon')
+    // Icon: () => import('../../icon')
   },
   props: {
     type: {
@@ -59,6 +61,9 @@ export default {
     return {
       active: false
     }
+  },
+  computed: {
+    prefixCls: () => prefixCls
   },
   methods: {
     handleTouchStart: function () {

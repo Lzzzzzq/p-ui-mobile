@@ -26,4 +26,13 @@ module.exports = {
       .set('@NewsUI', resolve('components'))
       .set('@vc', resolve('src/components'))
   }
+  // css: {
+  //   loaderOptions: {
+  //     less: {
+  //       modifyVars: {
+  //         '@primary-color': 'black'
+  //       }
+  //     }
+  //   }
+  // }
 }
