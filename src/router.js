@@ -29,6 +29,16 @@ export default new Router({
           path: 'wingBlank',
           name: 'wingBlankDoc',
           component: () => import(/* webpackChunkName: "wingBlankDoc" */ './views/docs/components/wingBlank/index.vue')
+        },
+        {
+          path: 'whiteSpace',
+          name: 'whiteSpaceDoc',
+          component: () => import(/* webpackChunkName: "whiteSpaceDoc" */ './views/docs/components/whiteSpace/index.vue')
+        },
+        {
+          path: 'flex',
+          name: 'flexDoc',
+          component: () => import(/* webpackChunkName: "flexDoc" */ './views/docs/components/flex/index.vue')
         }
       ]
     }, {
@@ -55,6 +65,16 @@ export default new Router({
           path: 'wingBlank',
           name: 'wingBlankDemo',
           component: () => import(/* webpackChunkName: "wingBlankDemo" */ './views/docs/components/wingBlank/demo.vue')
+        },
+        {
+          path: 'whiteSpace',
+          name: 'whiteSpaceDemo',
+          component: () => import(/* webpackChunkName: "whiteSpaceDemo" */ './views/docs/components/whiteSpace/demo.vue')
+        },
+        {
+          path: 'flex',
+          name: 'flexDemo',
+          component: () => import(/* webpackChunkName: "flexDemo" */ './views/docs/components/flex/demo.vue')
         }
       ]
     }

@@ -84,7 +84,7 @@ export default {
     // padding-left: 16px;
   }
   .treeParentNode {
-    color: @text-color-sec;
+    color: @text-color-ass;
     cursor: auto;
   }
   .treeRootNode {

@@ -2,11 +2,17 @@ import Toast from './toast'
 import Icon from './icon/src/index'
 import WingBlank from './wingBlank/src/index'
 import Button from './button/src/index'
+import WhiteSpace from './whiteSpace/src/index'
+import FlexWrap from './flex/src/flexWrap'
+import FlexItem from './flex/src/flexItem'
 
 const components = [
   Icon,
   WingBlank,
-  Button
+  Button,
+  WhiteSpace,
+  FlexWrap,
+  FlexItem
 ]
 
 const methods = [
@@ -33,7 +39,10 @@ const NewsUIMobile = {
   Toast,
   Icon,
   WingBlank,
-  Button
+  Button,
+  WhiteSpace,
+  FlexWrap,
+  FlexItem
 }
 
 export default NewsUIMobile

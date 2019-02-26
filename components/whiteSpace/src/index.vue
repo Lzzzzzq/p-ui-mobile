@@ -1,25 +1,26 @@
 <template>
   <div :class="`${prefixCls}`" :style="{
-    marginLeft: size,
-    marginRight: size
-  }">
-    <slot></slot>
-  </div>
+    height: size
+  }"></div>
 </template>
 
 <script>
 import config from '../../_util/config'
 
 export default {
-  name: 'NumWingBlank',
+  name: 'NumWhiteSpace',
   props: {
     size: {
       type: String,
-      default: () => '16px'
+      default: () => '10px'
     }
   },
   computed: {
-    prefixCls: () => `${config.prefixCls}-wingblank`
+    prefixCls: () => `${config.prefixCls}-whitespace`
   }
 }
 </script>
+
+<style>
+
+</style>

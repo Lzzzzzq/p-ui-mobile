@@ -11,9 +11,17 @@ export default {
           name: 'Layout',
           child: [
             {
+              name: 'Flex flex布局',
+              path: '/docs/flex',
+              id: '/docs/flex'
+            }, {
               name: 'WingBlank 两翼留白',
               path: '/docs/wingBlank',
               id: '/docs/wingBlank'
+            }, {
+              name: 'WhiteSpace 上下留白',
+              path: '/docs/whiteSpace',
+              id: '/docs/whiteSpace'
             }
           ]
         },
