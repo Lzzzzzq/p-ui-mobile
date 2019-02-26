@@ -1,10 +1,13 @@
 <template>
   <i class="icon anticon" :class="{
+    [`${prefixCls}`]: true,
     [type]: true
   }"></i>
 </template>
 
 <script>
+import config from '../../_util/config'
+
 export default {
   name: 'NumIcon',
   props: {
@@ -12,6 +15,9 @@ export default {
       type: String,
       default: () => ('')
     }
+  },
+  computed: {
+    prefixCls: () => `${config.prefixCls}-icon`
   }
 }
 </script>

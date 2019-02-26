@@ -1,8 +1,13 @@
 <template>
-  <div class="numToastWrap" :style="{
-    'pointer-events': mask ? 'auto' : 'none',
-    'padding-top': top
-  }">
+  <div
+    :class="{
+      [`${prefixCls}-wrap`]: true
+    }"
+    :style="{
+      'pointer-events': mask ? 'auto' : 'none',
+      'padding-top': top
+    }"
+  >
     <transition
       name="fade"
       enter-active-class="animated bounceIn faster"
@@ -10,11 +15,11 @@
       @after-enter="afterEnter"
       @after-leave="afterLeave"
     >
-      <div v-if="visible" class="numToast">
-        <div class="numToastIcon" v-if="icon">
+      <div v-if="visible" :class="[`${prefixCls}-box`]">
+        <div :class="[`${prefixCls}-icon`]" v-if="icon">
           <Icon :type="iconType"></Icon>
         </div>
-        <div class="numToastTxt">
+        <div :class="[`${prefixCls}-text`]">
           {{msg}}
         </div>
       </div>
@@ -24,11 +29,15 @@
 
 <script>
 import Icon from '../../icon'
+import config from '../../_util/config'
 
 export default {
   name: 'NumToast',
   components: {
     Icon
+  },
+  computed: {
+    prefixCls: () => `${config.prefixCls}-toast`
   },
   data () {
     return {

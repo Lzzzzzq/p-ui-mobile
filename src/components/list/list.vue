@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style scoped lang="less">
-@import '../../../components/style/common.less';
+@import '../../../components/style/index.less';
 
 .wrap {
   flex: 0 0 260px;
@@ -51,7 +51,7 @@ export default {
 }
 </style>
 <style lang="less">
-@import '../../../components/style/common.less';
+@import '../../../components/style/index.less';
 
 .treeNodeWrap {
 

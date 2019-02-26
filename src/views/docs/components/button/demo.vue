@@ -58,7 +58,7 @@ export default {
   name: 'ButtonDemo',
   methods: {
     handleClick: function () {
-      console.log('click')
+      this.$toast.info('点击按钮')
     }
   }
 }

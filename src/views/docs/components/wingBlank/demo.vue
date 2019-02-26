@@ -1,8 +1,14 @@
 <template>
   <div>
-    <NumWingBlank>默认边距16px</NumWingBlank>
-    <NumWingBlank size="20px">自定义size 20px</NumWingBlank>
-    <NumWingBlank size="10%">自定义size 10%</NumWingBlank>
+    <NumWingBlank>
+      <NumButton>默认边距16px</NumButton>
+    </NumWingBlank>
+    <NumWingBlank size="30px">
+      <NumButton>自定义 30px</NumButton>
+    </NumWingBlank>
+    <NumWingBlank size="30%">
+      <NumButton>自定义 30%</NumButton>
+    </NumWingBlank>
   </div>
 </template>
 
