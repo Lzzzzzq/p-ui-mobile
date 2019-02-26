@@ -1,35 +1,47 @@
 <template>
   <a
     :class="{
-      [`${prefixCls.button}-wrap`]: true,
-      [`${prefixCls.button}-${type}`]: true,
-      [`${prefixCls.button}-active`]: active,
-      [`${prefixCls.button}-disabled`]: disabled,
-      [`${prefixCls.button}-inline`]: inline,
-      'numBtnSmall': size === 'small'
+      [`${prefixCls}-wrap`]: true,
+      [`${prefixCls}-${type}`]: true,
+      [`${prefixCls}-active`]: active,
+      [`${prefixCls}-disabled`]: disabled,
+      [`${prefixCls}-inline`]: inline
     }"
+
     @touchstart="handleTouchStart"
     @mousedown="handleTouchStart"
 
     @touchmove="handleMoveOut"
     @mousemove="handleMoveOut"
+
     @touchend="handleMoveOut"
     @mouseup="handleMoveOut"
 
     @click="handleClick"
   >
-    <!-- <Icon v-if="icon" :type="icon" class="numBtnIcon"></Icon> -->
-    <span class="numBtnText"><slot></slot></span>
+    <Icon
+      v-if="icon"
+      :type="icon"
+      :class="{
+        [`${prefixCls}-icon`]: true
+      }"
+    ></Icon>
+    <span
+      v-if="type !== 'icon'"
+      :class="{
+        [`${prefixCls}-text`]: true
+      }"
+    ><slot></slot></span>
   </a>
 </template>
 
 <script>
-import prefixCls from '../../_util/prefixCls'
+import config from '../../_util/config'
 
 export default {
   name: 'NumButton',
   components: {
-    // Icon: () => import('../../icon')
+    Icon: () => import('../../icon')
   },
   props: {
     type: {
@@ -63,7 +75,7 @@ export default {
     }
   },
   computed: {
-    prefixCls: () => prefixCls
+    prefixCls: () => `${config.prefixCls}-btn`
   },
   methods: {
     handleTouchStart: function () {

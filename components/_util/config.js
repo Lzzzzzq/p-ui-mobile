@@ -1,4 +1,3 @@
 export default {
-  durationEnter: 200,
-  durationLeave: 100
+  prefixCls: 'nui-mobile'
 }
