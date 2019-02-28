@@ -90,7 +90,6 @@ export default {
 | inline | 设置为行内 | boolean | false |
 | icon | 设置带图标 | string |  |
 
-
 ## 事件
 
 | 事件名称 | 说明 |
