@@ -9,14 +9,14 @@
 
     .@{toast-prefix-cls}-box {
       display: inline-block;
-      background-color: @toast-color-bg;
-      padding: 10px;
+      background-color: @bg-color-mask;
+      padding: @h-spacing-base;
       color: @text-color-white;
       border-radius: @border-radius-base;
-      margin: 0 40px;
+      margin: 0 @v-spacing-xl * 2;
     }
     .@{toast-prefix-cls}-icon {
-      padding: 4px 6px;
+      padding: @v-spacing-sm @h-spacing-base;
   
       i {
         font-size: @font-size-base * 2;

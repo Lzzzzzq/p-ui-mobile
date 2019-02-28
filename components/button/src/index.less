@@ -8,7 +8,6 @@
     border-radius: @border-radius-base;
     height: @btn-size-base;
     line-height: @btn-size-base;
-    display: flex;
     text-align: center;
     box-sizing: border-box;
     word-break: break-word;
@@ -16,61 +15,73 @@
     overflow: hidden;
     text-overflow: ellipsis;
 
-    justify-content: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
+
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   // 默认状态
   &-wrap&-default {
     background-color: transparent;
-    border: @hd solid @primary-color;
-    color: @primary-color;
+    border: @hd solid @brand-primary-color;
+    color: @brand-primary-color;
   }
   &-wrap&-primary {
-    background-color: @primary-color;
+    background-color: @brand-primary-color;
     color: @text-color-white;
-    border: @hd solid @primary-color;
+    border: @hd solid @brand-primary-color;
   }
   &-wrap&-info {
     background-color: transparent;
-    border: @hd solid @btn-color-info;
+    border: @hd solid @bg-color-info;
     color: @text-color-sec;
   }
   &-wrap&-text {
     background-color: transparent;
     border: @hd solid transparent;
-    color: @btn-color-info;
+    color: @bg-color-info;
   }
 
   // 激活状态
   &-active&-default {
-    background-color: @primary-color;
+    background-color: @brand-primary-color;
     color: @text-color-white;
   }
   &-active&-primary {
-    background-color: @btn-color-primary-active;
-    border: @hd solid @btn-color-primary-active;
+    background-color: @brand-primary-color-tap;
+    border: @hd solid @brand-primary-color-tap;
   }
   &-active&-info {
-    background-color: @btn-color-info;
-    border: @hd solid @btn-color-info;
+    background-color: @bg-color-info;
+    border: @hd solid @bg-color-info;
     color: @text-color-white;
   }
 
   // 不可选中状态
   &-wrap&-disabled {
-    background-color: @btn-color-disabled;
-    color: @btn-text-color-disabled;
-    border: @hd solid @btn-color-disabled;
+    background-color: @brand-disabled-color;
+    color: @text-color-disabled;
+    border: @hd solid @brand-disabled-color;
   }
 
   // 行内
   &-inline {
+    display: inline;
     display: inline-flex;
-    padding: 0 12px;
+    padding: 0 @h-spacing-lg;
   }
 
   // icon
   &-icon {
-    margin-right: 8px;
+    margin-right: @h-spacing-base;
   }
 }

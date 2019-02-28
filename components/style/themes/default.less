@@ -1,61 +1,81 @@
 
-// 全局主色（用于导航栏，按钮，需要强调的文字等）
-@primary-color: #e93030;
+// 基本单位
+@hd: 1px;
 
-// 全局主色（用于工具栏背景等）
-@primary-bg: #252525;
+// 字体
+@font-family-base: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif,
+"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-// 链接色（用于链接文字、提示文字等）
-@link-color: #4691ee;
+// 品牌色
+@brand-primary-color: #e93030;
+@brand-primary-color-tap: #d12b2b;
+@brand-primary-bg: #252525;
+@brand-link-color: #4691ee;
+@brand-success-color: #009900;
+@brand-warning-color: #fea31e;
+@brand-disabled-color: #ccc;
 
-// 成功色（用于股票涨跌等）
-@success-color: #009900;
-
-// 警告色（用于提示文字或图数据图表等）
-@warning-color: #fea31e;
-
-// 主文本色（标题、正文与重要内容等）
+// 文本色
 @text-color-base: #323232;
-
-// 次文本色（二级标题、次要文字等）
 @text-color-sec: #666;
-
-// 辅助文本色（辅助文字或描述性文字等）
 @text-color-ass: #999;
-
-// 提示文本色（提示、说明等）
 @text-color-tip: #ccc;
-
-// 白色文字
 @text-color-white: #fff;
+@text-color-disabled: rgba(255, 255, 255, 0.6);
 
-// 深分割线
+// 分割线色
 @line-color-deep: #cacaca;
-
-// 主分割线
 @line-color-base: #ddd;
-
-// 浅分割线
 @line-color-light: #eee;
 
-// 卡片背景色（卡片、弹框）
+// 背景色
 @bg-color-card: #fff;
-
-// 主背景色（全局）
 @bg-color-global: #f5f5f5;
+@bg-color-info: #999;
+@bg-color-mask: rgba(0, 0, 0, 0.7);
 
-// 遮罩层背景色
-@bg-color-mask: rgba(0, 0, 0, 0.6);
+// 遮罩层层级
 @z-index-mask: 999;
 
+
+// 尺寸
+// ---
+
+// 字号
+@font-size-lg: @hd * 18;
+@font-size-base: @hd * 14;
+@font-size-sm: @hd * 12;
+
+// 圆角
+@border-radius-lg: @hd * 8;
+@border-radius-base: @hd * 4;
+@border-radius-sm: @hd * 2;
+@border-radius-circle: 50%;
+
+
+// 间距
+// ---
+
+// 水平间距
+@h-spacing-xl: @hd * 18;
+@h-spacing-lg: @hd * 12;
+@h-spacing-base: @hd * 8;
+@h-spacing-sm: @hd * 4;
+@h-spacing-xs: @hd * 2;
+
+// 垂直间距
+@v-spacing-xl: @hd * 20;
+@v-spacing-lg: @hd * 14;
+@v-spacing-md: @hd * 8;
+@v-spacing-sm: @hd * 4;
+@v-spacing-xs: @hd * 2;
+
+
+// 组件变量
+// ---
+
 // button
-@btn-size-base: 28px;
-@btn-color-primary-active: #d12b2b;
-@btn-color-disabled: #ccc;
-@btn-text-color-disabled: rgba(255, 255, 255, 0.6);
-@btn-color-info: #999;
+@btn-size-base: @hd * 28;
 
 // toast
-@toast-color-bg: rgba(0, 0, 0, 0.75);
 @toast-position-top: 38%;
-
