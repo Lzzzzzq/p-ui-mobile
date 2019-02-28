@@ -6,6 +6,11 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
+      path: '/',
+      name: '/',
+      redirect: '/docs',
+      component: () => import(/* webpackChunkName: "doc" */ './views/docs/index.vue')
+    }, {
       path: '/docs',
       name: 'docs',
       component: () => import(/* webpackChunkName: "doc" */ './views/docs/index.vue'),
