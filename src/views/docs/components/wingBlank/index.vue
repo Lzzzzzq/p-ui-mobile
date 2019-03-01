@@ -1,5 +1,5 @@
 <template>
-  <div class="wingBlankDocsWrap">
+  <div>
     <Md :mdData="mdData"></Md>
     <Demo src="/demo/wingBlank"></Demo>
   </div>
@@ -8,10 +8,9 @@
 <script>
 import Md from '@vc/md'
 import Demo from '@vc/demo'
-import mdData from './wingBlank.md'
+import mdData from './index.md'
 
 export default {
-  name: 'WingBlankDocs',
   components: {
     Md,
     Demo
@@ -23,5 +22,3 @@ export default {
   }
 }
 </script>
-<style lang="less">
-</style>

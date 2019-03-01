@@ -1,32 +1,32 @@
 <template>
-  <NumWingBlank>
-    <NumWhiteSpace></NumWhiteSpace>
-    <NumFlexWrap>
-      <NumFlexItem><div class="flexItem">Block</div></NumFlexItem>
-      <NumFlexItem><div class="flexItem">Block</div></NumFlexItem>
-      <NumFlexItem><div class="flexItem">Block</div></NumFlexItem>
-      <NumFlexItem><div class="flexItem">Block</div></NumFlexItem>
-    </NumFlexWrap>
-    <NumFlexWrap>
-      <NumFlexItem><div class="flexItem">Block</div></NumFlexItem>
-      <NumFlexItem><div class="flexItem">Block</div></NumFlexItem>
-      <NumFlexItem><div class="flexItem">Block</div></NumFlexItem>
-    </NumFlexWrap>
-    <NumFlexWrap>
-      <NumFlexItem><div class="flexItem">Block</div></NumFlexItem>
-    </NumFlexWrap>
-    <NumWhiteSpace></NumWhiteSpace>
-    <NumFlexWrap direction="column">
-      <NumFlexItem><div class="flexItem">Block</div></NumFlexItem>
-      <NumFlexItem><div class="flexItem">Block</div></NumFlexItem>
-      <NumFlexItem><div class="flexItem">Block</div></NumFlexItem>
-    </NumFlexWrap>
-  </NumWingBlank>
+  <n-wing-blank>
+    <n-white-space></n-white-space>
+    <n-flex-wrap>
+      <n-flex-item><div class="flexItem">Block</div></n-flex-item>
+      <n-flex-item><div class="flexItem">Block</div></n-flex-item>
+      <n-flex-item><div class="flexItem">Block</div></n-flex-item>
+      <n-flex-item><div class="flexItem">Block</div></n-flex-item>
+    </n-flex-wrap>
+    <n-flex-wrap>
+      <n-flex-item><div class="flexItem">Block</div></n-flex-item>
+      <n-flex-item><div class="flexItem">Block</div></n-flex-item>
+      <n-flex-item><div class="flexItem">Block</div></n-flex-item>
+    </n-flex-wrap>
+    <n-flex-wrap>
+      <n-flex-item><div class="flexItem">Block</div></n-flex-item>
+    </n-flex-wrap>
+    <n-white-space></n-white-space>
+    <n-flex-wrap direction="column">
+      <n-flex-item><div class="flexItem">Block</div></n-flex-item>
+      <n-flex-item><div class="flexItem">Block</div></n-flex-item>
+      <n-flex-item><div class="flexItem">Block</div></n-flex-item>
+    </n-flex-wrap>
+  </n-wing-blank>
 </template>
 
 <script>
 export default {
-  name: 'WhiteSpaceDemo'
+  name: 'FlexDemo'
 }
 </script>
 

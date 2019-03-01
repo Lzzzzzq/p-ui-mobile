@@ -15,7 +15,7 @@
 import config from '../../_util/config'
 
 export default {
-  name: 'NumFlexWrap',
+  name: 'NFlexWrap',
   props: {
     direction: {
       type: String,

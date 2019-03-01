@@ -32,7 +32,7 @@ import Icon from '../../icon'
 import config from '../../_util/config'
 
 export default {
-  name: 'NumToast',
+  name: 'NToast',
   components: {
     Icon
   },

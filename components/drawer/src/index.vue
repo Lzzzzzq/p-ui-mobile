@@ -39,7 +39,7 @@
 import config from '../../_util/config'
 
 export default {
-  name: 'NumDrawer',
+  name: 'NDrawer',
   props: {
     value: {
       type: Boolean,

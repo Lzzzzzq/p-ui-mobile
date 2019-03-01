@@ -1,5 +1,5 @@
 <template>
-  <div class="buttonDocsWrap">
+  <div>
     <Md :mdData="mdData"></Md>
     <Demo src="/demo/button"></Demo>
   </div>
@@ -8,10 +8,9 @@
 <script>
 import Md from '@vc/md'
 import Demo from '@vc/demo'
-import mdData from './button.md'
+import mdData from './index.md'
 
 export default {
-  name: 'ButtonDocs',
   components: {
     Md,
     Demo
@@ -23,5 +22,3 @@ export default {
   }
 }
 </script>
-<style lang="less">
-</style>

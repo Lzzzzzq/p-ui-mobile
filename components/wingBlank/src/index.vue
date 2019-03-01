@@ -11,7 +11,7 @@
 import config from '../../_util/config'
 
 export default {
-  name: 'NumWingBlank',
+  name: 'NWingBlank',
   props: {
     size: {
       type: String,

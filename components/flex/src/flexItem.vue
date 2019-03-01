@@ -6,7 +6,7 @@
 import config from '../../_util/config'
 
 export default {
-  name: 'NumFlexItem',
+  name: 'NFlexItem',
   computed: {
     prefixCls: () => `${config.prefixCls}-flex-item`
   }

@@ -14,25 +14,26 @@ Vue.use(Drawer)
 
 ```html
 <!-- *.vue -->
-
 <template>
   <div style="min-height: 100vh">
-    <num-wing-blank>
-      <num-white-space></num-white-space>
-      <num-button @click="handleShowLeft">左侧</num-button>
-      <num-white-space></num-white-space>
-      <num-button @click="handleShowRight">右侧</num-button>
-      <num-white-space></num-white-space>
-      <num-drawer
+    <n-wing-blank>
+      <n-white-space></n-white-space>
+      <n-button @click="handleShowLeft">左侧</n-button>
+      <n-white-space></n-white-space>
+      <n-button @click="handleShowRight">右侧</n-button>
+      <n-white-space></n-white-space>
+
+      <n-drawer
         v-model="visible"
         :side="side"
-        distance="25%"
         @show="handleShow"
         @hide="handleHide"
+        distance="25%"
       >
         这是一个抽屉
-      </num-drawer>
-    </num-wing-blank>
+      </n-drawer>
+
+    </n-wing-blank>
   </div>
 </template>
 
@@ -63,7 +64,6 @@ export default {
   }
 }
 </script>
-
 
 ```
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="__component__DocsWrap">
+  <div>
     <Md :mdData="mdData"></Md>
     <Demo src="/demo/__component__"></Demo>
   </div>
@@ -8,10 +8,9 @@
 <script>
 import Md from '@vc/md'
 import Demo from '@vc/demo'
-import mdData from './__component__.md'
+import mdData from './index.md'
 
 export default {
-  name: '__component__Docs',
   components: {
     Md,
     Demo
@@ -23,5 +22,3 @@ export default {
   }
 }
 </script>
-<style lang="less">
-</style>

@@ -1,16 +1,16 @@
 <template>
   <div>
-    <NumWingBlank>
-      <NumButton>默认边距16px</NumButton>
-    </NumWingBlank>
-    <NumWhiteSpace></NumWhiteSpace>
-    <NumWingBlank size="30px">
-      <NumButton>自定义 30px</NumButton>
-    </NumWingBlank>
-    <NumWhiteSpace></NumWhiteSpace>
-    <NumWingBlank size="30%">
-      <NumButton>自定义 30%</NumButton>
-    </NumWingBlank>
+    <n-wing-blank>
+      <n-button>默认边距16px</n-button>
+    </n-wing-blank>
+    <n-white-space></n-white-space>
+    <n-wing-blank size="30px">
+      <n-button>自定义 30px</n-button>
+    </n-wing-blank>
+    <n-white-space></n-white-space>
+    <n-wing-blank size="30%">
+      <n-button>自定义 30%</n-button>
+    </n-wing-blank>
   </div>
 </template>
 
