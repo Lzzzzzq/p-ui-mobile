@@ -54,13 +54,22 @@ export default {
     },
 
     handleToastError: function () {
-      this.$toast.error('提交成功')
+      this.$toast.error('提交失败')
     },
 
     handleToastHtml: function () {
       this.$toast.info({
-        msg: '<div class="hello"><img src="https://avatars1.githubusercontent.com/u/6128107?v=4" width="80px" height="80px" /><div>vue</div></div>',
-        dangerouslyUseHTMLString: true
+        domNode: (h) => {
+          return (
+            <div>
+              <n-button type="primary" inline on-click={this.handleToastError}>
+                这是一个 button
+              </n-button>
+            </div>
+          )
+        },
+        mask: true,
+        jsx: true
       })
     }
   }
@@ -78,4 +87,5 @@ export default {
 | duration | 持续时间 | number | 2000 |
 | top | 距离顶部位置 | string | '38%' |
 | onClose | 关闭后回调 | function | |
-|dangerouslyUseHTMLString | 开启渲染 html，开启后会将 msg 内容当做 html 代码进行渲染 | boolean | false|
+| jsx | 开启渲染 jsx | boolean | false |
+| domNode | 返回一个 jsx 对象，**注意入参 h** | jsx |

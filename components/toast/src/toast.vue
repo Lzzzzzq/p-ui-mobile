@@ -1,31 +1,3 @@
-<template>
-  <div
-    :class="{
-      [`${prefixCls}-wrap`]: true
-    }"
-    :style="{
-      'pointer-events': mask ? 'auto' : 'none',
-      'padding-top': top
-    }"
-  >
-    <transition
-      name="fade"
-      enter-active-class="animated bounceIn faster"
-      leave-active-class="animated fadeOut faster"
-      @after-enter="afterEnter"
-      @after-leave="afterLeave"
-    >
-      <div v-if="visible" :class="[`${prefixCls}-box`]">
-        <div :class="[`${prefixCls}-icon`]" v-if="icon">
-          <Icon :type="iconType"></Icon>
-        </div>
-        <div :class="[`${prefixCls}-text`]" v-html="msg" v-if="dangerouslyUseHTMLString"></div>
-        <div :class="[`${prefixCls}-text`]" v-if="!dangerouslyUseHTMLString">{{msg}}</div>
-      </div>
-    </transition>
-  </div>
-</template>
-
 <script>
 import Icon from '../../icon'
 import config from '../../_util/config'
@@ -48,7 +20,8 @@ export default {
       iconType: '',
       type: 'info',
       top: '38%',
-      dangerouslyUseHTMLString: false
+      jsx: false,
+      domNode: () => {}
     }
   },
   watch: {
@@ -89,10 +62,52 @@ export default {
       this.onClose()
     },
     onClose: function () {}
+  },
+  render (h) {
+    const {
+      iconType,
+      visible,
+      jsx
+    } = this
+
+    const iconShow = iconType ? (
+      <div class={`${this.prefixCls}-icon`}>
+        <Icon type={this.iconType}></Icon>
+      </div>
+    ) : null
+
+    const toastShow = visible ? (
+      <div class={`${this.prefixCls}-box`}>
+        {iconShow}
+        <div class={`${this.prefixCls}-text`}>
+          {jsx ? this.domNode(h) : this.msg}
+        </div>
+      </div>
+    ) : null
+
+    return (
+      <div
+        class={`${this.prefixCls}-wrap`}
+        style={{
+          'pointer-events': this.mask ? 'auto' : 'none',
+          'padding-top': this.top
+        }}
+      >
+        <transition
+          name="fade"
+          enter-active-class="animated bounceIn faster"
+          leave-active-class="animated fadeOut faster"
+          on-after-enter={this.afterEnter}
+          on-after-leave={this.afterLeave}
+        >
+          {toastShow}
+        </transition>
+      </div>
+    )
   }
 }
 </script>
 
-<style lang='less'>
+<style lang="less">
 @import './toast.less';
 </style>
