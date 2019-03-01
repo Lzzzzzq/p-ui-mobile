@@ -1,6 +1,6 @@
-<script>
 import Icon from '../../icon'
 import config from '../../_util/config'
+import './toast.less'
 
 export default {
   name: 'NToast',
@@ -106,8 +106,3 @@ export default {
     )
   }
 }
-</script>
-
-<style lang="less">
-@import './toast.less';
-</style>

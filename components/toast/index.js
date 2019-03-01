@@ -1,4 +1,4 @@
-import ToastComponent from './src/toast.vue'
+import ToastComponent from './src/toast.jsx'
 
 const Toast = {}
 

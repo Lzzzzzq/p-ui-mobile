@@ -7,7 +7,7 @@
         :data-clipboard-text="item"
         @click="handleClickIcon(item)"
       >
-        <NumIcon :class="item"></NumIcon>
+        <n-icon :class="item"></n-icon>
         <div class="iconName">{{item}}</div>
       </div>
     </div>
