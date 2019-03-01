@@ -13,6 +13,7 @@ Vue.use(Toast)
 
 ```html
 <!-- *.vue -->
+
 <template>
   <n-wing-blank>
     <n-white-space></n-white-space>
@@ -23,6 +24,8 @@ Vue.use(Toast)
     <n-button @click="handleToastSuccess" type="primary">弹个成功框</n-button>
     <n-white-space></n-white-space>
     <n-button @click="handleToastError" type="primary">弹个失败框</n-button>
+    <n-white-space></n-white-space>
+    <n-button @click="handleToastHtml" type="primary">弹出html</n-button>
   </n-wing-blank>
 </template>
 
@@ -52,6 +55,13 @@ export default {
 
     handleToastError: function () {
       this.$toast.error('提交成功')
+    },
+
+    handleToastHtml: function () {
+      this.$toast.info({
+        msg: '<div class="hello"><img src="https://avatars1.githubusercontent.com/u/6128107?v=4" width="80px" height="80px" /><div>vue</div></div>',
+        dangerouslyUseHTMLString: true
+      })
     }
   }
 }
@@ -68,3 +78,4 @@ export default {
 | duration | 持续时间 | number | 2000 |
 | top | 距离顶部位置 | string | '38%' |
 | onClose | 关闭后回调 | function | |
+|dangerouslyUseHTMLString | 开启渲染 html，开启后会将 msg 内容当做 html 代码进行渲染 | boolean | false|

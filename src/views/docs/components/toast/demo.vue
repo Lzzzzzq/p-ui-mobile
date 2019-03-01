@@ -8,6 +8,8 @@
     <n-button @click="handleToastSuccess" type="primary">弹个成功框</n-button>
     <n-white-space></n-white-space>
     <n-button @click="handleToastError" type="primary">弹个失败框</n-button>
+    <n-white-space></n-white-space>
+    <n-button @click="handleToastHtml" type="primary">弹出html</n-button>
   </n-wing-blank>
 </template>
 
@@ -37,6 +39,13 @@ export default {
 
     handleToastError: function () {
       this.$toast.error('提交成功')
+    },
+
+    handleToastHtml: function () {
+      this.$toast.info({
+        msg: '<div class="hello"><img src="https://avatars1.githubusercontent.com/u/6128107?v=4" width="80px" height="80px" /><div>vue</div></div>',
+        dangerouslyUseHTMLString: true
+      })
     }
   }
 }

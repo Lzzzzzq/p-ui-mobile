@@ -19,9 +19,8 @@
         <div :class="[`${prefixCls}-icon`]" v-if="icon">
           <Icon :type="iconType"></Icon>
         </div>
-        <div :class="[`${prefixCls}-text`]">
-          {{msg}}
-        </div>
+        <div :class="[`${prefixCls}-text`]" v-html="msg" v-if="dangerouslyUseHTMLString"></div>
+        <div :class="[`${prefixCls}-text`]" v-if="!dangerouslyUseHTMLString">{{msg}}</div>
       </div>
     </transition>
   </div>
@@ -48,7 +47,8 @@ export default {
       icon: false,
       iconType: '',
       type: 'info',
-      top: '38%'
+      top: '38%',
+      dangerouslyUseHTMLString: false
     }
   },
   watch: {
