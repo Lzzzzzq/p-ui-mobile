@@ -44,6 +44,11 @@ export default new Router({
           path: 'flex',
           name: 'flexDoc',
           component: () => import(/* webpackChunkName: "flexDoc" */ './views/docs/components/flex/index.vue')
+        },
+        {
+          path: 'drawer',
+          name: 'drawerDoc',
+          component: () => import(/* webpackChunkName: "drawerDoc" */ './views/docs/components/drawer/index.vue')
         }
       ]
     }, {
@@ -80,6 +85,11 @@ export default new Router({
           path: 'flex',
           name: 'flexDemo',
           component: () => import(/* webpackChunkName: "flexDemo" */ './views/docs/components/flex/demo.vue')
+        },
+        {
+          path: 'drawer',
+          name: 'drawerDemo',
+          component: () => import(/* webpackChunkName: "drawerDemo" */ './views/docs/components/drawer/demo.vue')
         }
       ]
     }

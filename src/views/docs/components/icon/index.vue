@@ -9,12 +9,11 @@
 <script>
 import Md from '@vc/md'
 // import Demo from '@vc/demo'
-import mdData from './icon.md'
+import mdData from './index.md'
 import Icons from './icons'
 import cont from '@NewsUI/_util/iconfont/demo_fontclass.html'
 
 export default {
-  name: 'IconDocs',
   components: {
     Icons,
     Md

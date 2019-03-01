@@ -78,7 +78,7 @@ export default {
 
   pre {
     word-wrap: break-word;
-    white-space:pre-wrap;
+    white-space: pre-wrap;
   }
   code {
     display: block;

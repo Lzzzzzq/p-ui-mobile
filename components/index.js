@@ -5,6 +5,7 @@ import Button from './button/src/index'
 import WhiteSpace from './whiteSpace/src/index'
 import FlexWrap from './flex/src/flexWrap'
 import FlexItem from './flex/src/flexItem'
+import Drawer from './drawer/src/index'
 
 const components = [
   Icon,
@@ -12,7 +13,8 @@ const components = [
   Button,
   WhiteSpace,
   FlexWrap,
-  FlexItem
+  FlexItem,
+  Drawer
 ]
 
 const methods = [
@@ -42,7 +44,8 @@ const NewsUIMobile = {
   Button,
   WhiteSpace,
   FlexWrap,
-  FlexItem
+  FlexItem,
+  Drawer
 }
 
 export default NewsUIMobile

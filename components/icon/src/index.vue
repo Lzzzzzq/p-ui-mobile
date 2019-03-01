@@ -9,7 +9,7 @@
 import config from '../../_util/config'
 
 export default {
-  name: 'NumIcon',
+  name: 'NIcon',
   props: {
     type: {
       type: String,

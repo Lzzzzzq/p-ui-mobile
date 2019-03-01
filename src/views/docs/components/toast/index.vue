@@ -8,10 +8,9 @@
 <script>
 import Md from '@vc/md'
 import Demo from '@vc/demo'
-import mdData from './toast.md'
+import mdData from './index.md'
 
 export default {
-  name: 'ToastDocs',
   components: {
     Md,
     Demo

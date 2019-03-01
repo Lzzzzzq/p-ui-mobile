@@ -15,7 +15,7 @@ Vue.use(Icon)
 <!-- *.vue -->
 
 <template>
-  <NumIcon type="icon-forward"></NumIcon>
+  <n-icon type="icon-forward"></n-icon>
 </template>
 ```
 ## API

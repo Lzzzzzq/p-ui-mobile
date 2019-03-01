@@ -1,10 +1,9 @@
 <template>
-  <NumIcon type="icon-forward"></NumIcon>
+  <n-icon type="icon-forward"></n-icon>
 </template>
 
 <script>
 export default {
-  name: 'IconDemo'
 }
 </script>
 

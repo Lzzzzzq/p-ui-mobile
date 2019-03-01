@@ -1,3 +1,20 @@
+# 按钮 Button
+
+点击后会触发一个操作。
+
+## 代码演示
+
+```javascript
+// main.js
+
+import { Button } from 'news-ui-mobile'
+
+Vue.use(Button)
+```
+
+```html
+<!-- *.vue -->
+
 <template>
   <n-wing-blank>
     <n-white-space></n-white-space>
@@ -63,3 +80,20 @@ export default {
   }
 }
 </script>
+
+```
+
+## API
+
+| 属性 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| type | 按钮类型，可选值为 default、primary、info、text | string | 'default' |
+| disabled | 设置禁用 | boolean | false |
+| inline | 设置为行内 | boolean | false |
+| icon | 设置带图标 | string |  |
+
+## 事件
+
+| 事件名称 | 说明 |
+| --- | --- |
+| click | 点击按钮时的回调 |

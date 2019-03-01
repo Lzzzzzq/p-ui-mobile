@@ -24,8 +24,16 @@ export default {
               id: '/docs/whiteSpace'
             }
           ]
-        },
-        {
+        }, {
+          name: 'Navigation',
+          child: [
+            {
+              name: 'Drawer 抽屉',
+              path: '/docs/drawer',
+              id: '/docs/drawer'
+            }
+          ]
+        }, {
           name: 'General',
           child: [
             {
