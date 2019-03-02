@@ -2,8 +2,16 @@ export default {
   docList: [
     {
       name: '快速上手',
-      path: '/docs',
-      id: '/docs'
+      path: '/docs/start',
+      id: '/docs/start'
+    }, {
+      name: '更新日志',
+      path: '/docs/changeLog',
+      id: '/docs/changeLog'
+    }, {
+      name: '定制主题',
+      path: '/docs/theme',
+      id: '/docs/theme'
     }, {
       name: 'Components',
       child: [
