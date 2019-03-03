@@ -6,6 +6,7 @@ import WhiteSpace from './whiteSpace/src/index'
 import FlexWrap from './flex/src/flexWrap'
 import FlexItem from './flex/src/flexItem'
 import Drawer from './drawer/src/index'
+import Modal from './modal'
 
 const components = [
   Icon,
@@ -18,7 +19,8 @@ const components = [
 ]
 
 const methods = [
-  Toast
+  Toast,
+  Modal
 ]
 
 const install = function (Vue, opts = {}) {
@@ -45,7 +47,8 @@ const NewsUIMobile = {
   WhiteSpace,
   FlexWrap,
   FlexItem,
-  Drawer
+  Drawer,
+  Modal
 }
 
 export default NewsUIMobile

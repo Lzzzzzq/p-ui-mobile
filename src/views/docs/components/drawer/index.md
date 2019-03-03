@@ -71,9 +71,10 @@ export default {
 
 | 属性 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| v-model | 是否打开抽屉 | Boolean | false |
-| side | 抽屉的位置，可选 left、right | String | 'left' |
-| distance | 抽屉距离边缘的距离 | String | '30%' |
+| v-model | 是否打开抽屉 | boolean | false |
+| side | 抽屉的位置，可选 left、right | string | 'left' |
+| distance | 抽屉距离边缘的距离 | string | '30%' |
+| closeByTouchMask | 是否可以通过点击蒙层收起抽屉 | boolean | true |
 
 ## 事件
 

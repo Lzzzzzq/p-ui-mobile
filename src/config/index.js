@@ -61,6 +61,10 @@ export default {
               name: 'Toast 轻提示',
               path: '/docs/toast',
               id: '/docs/toast'
+            }, {
+              name: 'Modal 对话框',
+              path: '/docs/modal',
+              id: '/docs/modal'
             }
           ]
         }

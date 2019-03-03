@@ -49,6 +49,11 @@ export default new Router({
           path: 'drawer',
           name: 'drawerDoc',
           component: () => import(/* webpackChunkName: "drawerDoc" */ './views/docs/components/drawer/index.vue')
+        },
+        {
+          path: 'modal',
+          name: 'modalDoc',
+          component: () => import(/* webpackChunkName: "modalDoc" */ './views/docs/components/modal/index.vue')
         }
       ]
     }, {
@@ -90,6 +95,11 @@ export default new Router({
           path: 'drawer',
           name: 'drawerDemo',
           component: () => import(/* webpackChunkName: "drawerDemo" */ './views/docs/components/drawer/demo.vue')
+        },
+        {
+          path: 'modal',
+          name: 'modalDemo',
+          component: () => import(/* webpackChunkName: "modalDemo" */ './views/docs/components/modal/demo.vue')
         }
       ]
     }
