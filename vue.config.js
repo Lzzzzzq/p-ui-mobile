@@ -25,7 +25,7 @@ module.exports = {
       .set('@src', resolve('src'))
       .set('@NewsUI', resolve('components'))
       .set('@vc', resolve('src/components'))
-  }
+  },
   // css: {
   //   loaderOptions: {
   //     less: {
@@ -35,4 +35,5 @@ module.exports = {
   //     }
   //   }
   // }
+  lintOnSave: false
 }
