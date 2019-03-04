@@ -7,6 +7,11 @@ module.exports = {
   devServer: {
     disableHostCheck: true
   },
+  configureWebpack: {
+    output: {
+      libraryExport: 'default'
+    }
+  },
   chainWebpack: config => {
     config.module
       .rule('md')
