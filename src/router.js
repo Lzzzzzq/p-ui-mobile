@@ -16,6 +16,16 @@ export default new Router({
       component: () => import(/* webpackChunkName: "doc" */ './views/docs/index.vue'),
       children: [
         {
+          path: 'start',
+          name: 'startDoc',
+          component: () => import(/* webpackChunkName: "startDoc" */ './views/docs/start/index.vue')
+        },
+        {
+          path: 'theme',
+          name: 'themeDoc',
+          component: () => import(/* webpackChunkName: "themeDoc" */ './views/docs/theme/index.vue')
+        },
+        {
           path: 'toast',
           name: 'toastDoc',
           component: () => import(/* webpackChunkName: "toastDoc" */ './views/docs/components/toast/index.vue')

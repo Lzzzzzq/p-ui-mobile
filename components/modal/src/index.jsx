@@ -71,9 +71,7 @@ const Modal = {
               try {
                 await onCancel()
                 hide()
-              } catch (e) {
-                console.error(e)
-              }
+              } catch (e) {}
             }}>
               {cancelText}
             </FlexItem>
@@ -82,9 +80,7 @@ const Modal = {
             try {
               await onOk()
               hide()
-            } catch (e) {
-              console.error(e)
-            }
+            } catch (e) {}
           }}>
             {okText}
           </FlexItem>
