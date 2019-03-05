@@ -1,6 +1,6 @@
 import config from '../../_util/config'
-import FlexWrap from '../../flex/src/flexWrap'
-import FlexItem from '../../flex/src/flexItem'
+import FlexWrap from '../../flex/src/flex-wrap'
+import FlexItem from '../../flex/src/flex-item'
 import './index.less'
 
 const Modal = {
