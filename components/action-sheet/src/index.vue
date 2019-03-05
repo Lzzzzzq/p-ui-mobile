@@ -1,18 +1,37 @@
 <template>
-  <transition name="fade" enter-active-class="animated slideIn fastest" leave-active-class="animated slideOut fastest">
-    <div :class="{
-            [`${prefixCls}-wrap`]: true}" v-if="modelValue" @click.self="handleClickMask">
-      <transition enter-active-class="animated slideInUp fastest" leave-active-class="animated slideOutDown fastest">
+  <transition
+    name="fade"
+    enter-active-class="animated slideIn fastest"
+    leave-active-class="animated slideOut fastest"
+  >
+    <div
+      :class="{
+        [`${prefixCls}-wrap`]: true
+      }"
+      v-if="modelValue"
+      @click.self="handleClickMask"
+    >
+      <transition
+        enter-active-class="animated slideInUp fastest"
+        leave-active-class="animated slideOutDown fastest"
+      >
         <div :class="{[`${prefixCls}-container`]: true}" v-if="currentValue">
-          <div :class="{
-                        [`${prefixCls}-title`]: true}" v-if="titleText">{{titleText}}</div>
-          <ul :class="{
-                        [`${prefixCls}-list`]:true}">
-            <li :class="{
-                            [`${prefixCls}-item`]:true}" v-for="(item,index) in actions" :key="index" @click.stop="itemClick(item,index)">{{item.name}}</li>
+          <div :class="{[`${prefixCls}-title`]: true}" v-if="titleText">{{titleText}}</div>
+          <ul :class="{[`${prefixCls}-list`]:true}">
+            <li
+              :class="{[`${prefixCls}-item`]:true}"
+              v-for="(item,index) in actions"
+              :key="index"
+              @click.stop="itemClick(item,index)"
+            >{{item.name}}</li>
           </ul>
-          <div :class="{
-                        [`${prefixCls}-btn`]: true}" @click.stop="cancelAction" v-if="cancelText">{{cancelText}}</div>
+          <div
+            :class="{
+              [`${prefixCls}-btn`]: true
+            }"
+            @click.stop="cancelAction"
+            v-if="cancelText"
+          >{{cancelText}}</div>
         </div>
       </transition>
     </div>
