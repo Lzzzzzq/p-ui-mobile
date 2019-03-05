@@ -70,8 +70,9 @@ const Modal = {
             <FlexItem class={`${prefixCls}-control-btn ${prefixCls}-control-cancel`} nativeOn-click={async () => {
               try {
                 await onCancel()
+              } catch (e) {} finally {
                 hide()
-              } catch (e) {}
+              }
             }}>
               {cancelText}
             </FlexItem>
@@ -79,8 +80,9 @@ const Modal = {
           <FlexItem class={`${prefixCls}-control-btn ${prefixCls}-control-ok`} nativeOn-click={async () => {
             try {
               await onOk()
+            } catch (e) {} finally {
               hide()
-            } catch (e) {}
+            }
           }}>
             {okText}
           </FlexItem>

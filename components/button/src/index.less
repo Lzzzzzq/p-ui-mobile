@@ -6,8 +6,6 @@
 
   &-wrap {
     border-radius: @border-radius-base;
-    height: @btn-size-base;
-    line-height: @btn-size-base;
     text-align: center;
     box-sizing: border-box;
     word-break: break-word;
@@ -28,7 +26,29 @@
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+
+    *:nth-child(2) {
+      margin-left: @h-spacing-md;
+    }
   }
+  // 尺寸
+  &-wrap&-normal {
+    height: @btn-size-base;
+    line-height: @line-height-base;
+    padding: 0 @h-spacing-lg;
+    font-size: @font-size-base;
+  }
+  &-wrap&-small {
+    height: @btn-size-sm;
+    line-height: @line-height-base;
+    padding: 0 @h-spacing-sm;
+    font-size: @font-size-sm;
+
+    .@{btn-prefix-cls}-icon {
+      font-size: @font-size-xs;
+    }
+  }
+
   // 默认状态
   &-wrap&-default {
     background-color: transparent;
@@ -48,7 +68,8 @@
   &-wrap&-text {
     background-color: transparent;
     border: @hd solid transparent;
-    color: @bg-color-info;
+    color: @text-color-sec;
+    border-radius: 0;
   }
 
   // 激活状态
@@ -68,20 +89,17 @@
 
   // 不可选中状态
   &-wrap&-disabled {
-    background-color: @brand-disabled-color;
-    color: @text-color-disabled;
-    border: @hd solid @brand-disabled-color;
+    opacity: @opacity-disabled;
   }
 
   // 行内
   &-inline {
     display: inline;
     display: inline-flex;
-    padding: 0 @h-spacing-lg;
   }
 
   // icon
-  &-icon {
-    margin-right: @h-spacing-md;
-  }
+  // &-icon {
+  //   margin-right: @h-spacing-md;
+  // }
 }
