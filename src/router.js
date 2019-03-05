@@ -64,6 +64,11 @@ export default new Router({
           path: 'modal',
           name: 'modalDoc',
           component: () => import(/* webpackChunkName: "modalDoc" */ './views/docs/components/modal/index.vue')
+        },
+        {
+          path: 'actionsheet',
+          name: 'actionSheetDoc',
+          component: () => import(/* webpackChunkName: "actionSheetDoc" */ './views/docs/components/actionsheet/index.vue')
         }
       ]
     }, {
@@ -110,6 +115,11 @@ export default new Router({
           path: 'modal',
           name: 'modalDemo',
           component: () => import(/* webpackChunkName: "modalDemo" */ './views/docs/components/modal/demo.vue')
+        },
+        {
+          path: 'actionSheet',
+          name: 'actionSheetDemo',
+          component: () => import(/* webpackChunkName: "actionSheetDemo" */ './views/docs/components/actionsheet/demo.vue')
         }
       ]
     }

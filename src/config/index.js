@@ -61,6 +61,10 @@ export default {
               name: 'Modal 对话框',
               path: '/docs/modal',
               id: '/docs/modal'
+            }, {
+              name: 'ActionSheet 动作面板',
+              path: '/docs/actionsheet',
+              id: '/docs/actionsheet'
             }
           ]
         }
