@@ -1,8 +1,7 @@
 <template>
   <transition
-    name="fade"
-    enter-active-class="animated slideIn fastest"
-    leave-active-class="animated slideOut fastest"
+    enter-active-class="animated fadeIn faster"
+    leave-active-class="animated fadeOut faster"
   >
     <div
       :class="{
@@ -12,8 +11,8 @@
       @click.self="handleClickMask"
     >
       <transition
-        enter-active-class="animated slideInUp fastest"
-        leave-active-class="animated slideOutDown fastest"
+        enter-active-class="animated slideInUp faster"
+        leave-active-class="animated slideOutDown faster"
       >
         <div :class="{[`${prefixCls}-container`]: true}" v-if="currentValue">
           <div :class="{[`${prefixCls}-title`]: true}" v-if="titleText">{{titleText}}</div>

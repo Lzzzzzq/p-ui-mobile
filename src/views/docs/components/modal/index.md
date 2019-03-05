@@ -13,6 +13,7 @@ Vue.use(Modal)
 
 ```html
 <!-- *.vue -->
+
 <template>
   <n-wing-blank>
     <n-white-space></n-white-space>

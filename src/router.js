@@ -69,6 +69,11 @@ export default new Router({
           path: 'actionsheet',
           name: 'actionSheetDoc',
           component: () => import(/* webpackChunkName: "actionSheetDoc" */ './views/docs/components/action-sheet/index.vue')
+        },
+        {
+          path: 'popover',
+          name: 'popoverDoc',
+          component: () => import(/* webpackChunkName: "popoverDoc" */ './views/docs/components/popover/index.vue')
         }
       ]
     }, {
@@ -120,6 +125,11 @@ export default new Router({
           path: 'actionSheet',
           name: 'actionSheetDemo',
           component: () => import(/* webpackChunkName: "actionSheetDemo" */ './views/docs/components/action-sheet/demo.vue')
+        },
+        {
+          path: 'popover',
+          name: 'popoverDemo',
+          component: () => import(/* webpackChunkName: "popoverDemo" */ './views/docs/components/popover/demo.vue')
         }
       ]
     }
