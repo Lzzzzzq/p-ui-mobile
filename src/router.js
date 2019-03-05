@@ -68,7 +68,7 @@ export default new Router({
         {
           path: 'actionsheet',
           name: 'actionSheetDoc',
-          component: () => import(/* webpackChunkName: "actionSheetDoc" */ './views/docs/components/actionsheet/index.vue')
+          component: () => import(/* webpackChunkName: "actionSheetDoc" */ './views/docs/components/action-sheet/index.vue')
         }
       ]
     }, {
@@ -119,7 +119,7 @@ export default new Router({
         {
           path: 'actionSheet',
           name: 'actionSheetDemo',
-          component: () => import(/* webpackChunkName: "actionSheetDemo" */ './views/docs/components/actionsheet/demo.vue')
+          component: () => import(/* webpackChunkName: "actionSheetDemo" */ './views/docs/components/action-sheet/demo.vue')
         }
       ]
     }

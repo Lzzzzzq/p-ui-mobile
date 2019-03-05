@@ -7,7 +7,7 @@ import FlexWrap from './flex/src/flex-wrap'
 import FlexItem from './flex/src/flex-item'
 import Drawer from './drawer/src/index'
 import Modal from './modal'
-import ActionSheet from './actionsheet/src/index'
+import ActionSheet from './action-sheet/src/index'
 
 const components = [
   Icon,
