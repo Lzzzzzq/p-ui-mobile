@@ -1,6 +1,6 @@
 import config from '../../_util/config'
-import FlexWrap from '../../flex/src/flexWrap'
-import FlexItem from '../../flex/src/flexItem'
+import FlexWrap from '../../flex/src/flex-wrap'
+import FlexItem from '../../flex/src/flex-item'
 import './index.less'
 
 const Modal = {
@@ -70,8 +70,9 @@ const Modal = {
             <FlexItem class={`${prefixCls}-control-btn ${prefixCls}-control-cancel`} nativeOn-click={async () => {
               try {
                 await onCancel()
+              } catch (e) {} finally {
                 hide()
-              } catch (e) {}
+              }
             }}>
               {cancelText}
             </FlexItem>
@@ -79,8 +80,9 @@ const Modal = {
           <FlexItem class={`${prefixCls}-control-btn ${prefixCls}-control-ok`} nativeOn-click={async () => {
             try {
               await onOk()
+            } catch (e) {} finally {
               hide()
-            } catch (e) {}
+            }
           }}>
             {okText}
           </FlexItem>

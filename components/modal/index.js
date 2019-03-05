@@ -8,13 +8,13 @@ const defaultData = {
   type: 'basic',
   cancelText: '取消',
   okText: '确定',
-  domNode: () => null,
   jsx: false,
+  closeByTouchMask: true,
+  domNode: () => null,
   onOk: () => {},
   onCancel: () => {},
   onOpen: () => {},
-  onClose: () => {},
-  closeByTouchMask: true
+  onClose: () => {}
 }
 
 const createDom = (ModalConstructor, opt) => {

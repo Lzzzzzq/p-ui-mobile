@@ -5,7 +5,8 @@
       [`${prefixCls}-${type}`]: true,
       [`${prefixCls}-active`]: active,
       [`${prefixCls}-disabled`]: disabled,
-      [`${prefixCls}-inline`]: inline
+      [`${prefixCls}-inline`]: inline,
+      [`${prefixCls}-${size}`]: true,
     }"
 
     @touchstart="handleTouchStart"
@@ -60,7 +61,7 @@ export default {
       type: String,
       default: () => 'normal'
     },
-    activeFeedback: {
+    activeStyle: {
       type: Boolean,
       default: () => true
     },
@@ -79,11 +80,11 @@ export default {
   },
   methods: {
     handleTouchStart: function () {
-      if (this.active || this.disabled || !this.activeFeedback) return
+      if (this.active || this.disabled || !this.activeStyle) return
       this.active = true
     },
     handleMoveOut: function () {
-      if (!this.active || this.disabled || !this.activeFeedback) return
+      if (!this.active || this.disabled || !this.activeStyle) return
       this.active = false
     },
     handleClick: function () {

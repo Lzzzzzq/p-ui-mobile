@@ -63,8 +63,8 @@ export default {
               id: '/docs/modal'
             }, {
               name: 'ActionSheet 动作面板',
-              path: '/docs/actionsheet',
-              id: '/docs/actionsheet'
+              path: '/docs/actionSheet',
+              id: '/docs/actionSheet'
             }
           ]
         }

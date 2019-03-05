@@ -1,13 +1,13 @@
 import Toast from './toast'
 import Icon from './icon/src/index'
-import WingBlank from './wingBlank/src/index'
+import WingBlank from './wing-blank/src/index'
 import Button from './button/src/index'
-import WhiteSpace from './whiteSpace/src/index'
-import FlexWrap from './flex/src/flexWrap'
-import FlexItem from './flex/src/flexItem'
+import WhiteSpace from './white-space/src/index'
+import FlexWrap from './flex/src/flex-wrap'
+import FlexItem from './flex/src/flex-item'
 import Drawer from './drawer/src/index'
 import Modal from './modal'
-import ActionSheet from './actionsheet/src/index'
+import ActionSheet from './action-sheet/src/index'
 
 const components = [
   Icon,
