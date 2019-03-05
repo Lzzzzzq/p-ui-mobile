@@ -10,7 +10,8 @@
             <n-action-sheet
                 v-model="sheetVisible"
                 :actions="actions"
-                :cancelText="cancelText">
+                :cancelText="cancelText"
+                @selected="handelSelect">
             </n-action-sheet>
         </n-wing-blank>
     </div>
@@ -22,24 +23,9 @@ export default {
     data () {
         return {
             actions: [
-                {
-                    name:'拍照',
-                    method: (item,index)=>{
-                        this.$toast.info('调用action:'+index+'==='+item.name)
-                    }
-                },
-                {
-                    name:'从相册中选择',
-                    method: (item,index)=>{
-                        this.$toast.info('调用action:'+index+'==='+item.name)
-                    }
-                },
-                {
-                    name:'从网页中选择',
-                    method: (item,index)=>{
-                        this.$toast.info('调用action:'+index+'==='+item.name)
-                    }
-                }
+                '拍照',
+                '从相册中选择',
+                '从网页中选择'
             ],
             sheetVisible: false,
             cancelText:'取消'
@@ -48,10 +34,14 @@ export default {
     methods: {
         actionSheetInit(){
             this.sheetVisible = true
+            this.cancelText = '取消'
         },
         nocancelAction(){
             this.sheetVisible = true
             this.cancelText = ''
+        },
+        handelSelect(item,index){
+            this.$toast.info('item:'+item+'===index:'+index)
         }
     }
 }

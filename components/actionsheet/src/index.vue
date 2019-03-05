@@ -20,7 +20,7 @@
                             [`${prefixCls}-item`]:true}"
                             v-for="(item,index) in actions"
                             :key="index"
-                            @click.stop="itemClick(item,index)">{{item.name}}</li>
+                            @click.stop="itemClick(item,index)">{{item}}</li>
                     </ul>
                     <div :class="{
                         [`${prefixCls}-btn`]: true}"
@@ -85,9 +85,10 @@ export default {
     },
     methods:{
         itemClick(item,index){
-            if (item.method && typeof item.method === 'function') {
-                item.method(item, index)
-            }
+            // if (item.method && typeof item.method === 'function') {
+            //     item.method(item, index)
+            // }
+            this.$emit('selected',item,index)
             this.currentValue = false
         },
         handleClickMask(){

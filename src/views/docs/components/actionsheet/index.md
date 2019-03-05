@@ -7,9 +7,9 @@
 ```javascript
 // main.js
 
-import { ActionSheet } from 'news-ui-mobile'
+import { ActionSheet } from "news-ui-mobile";
 
-Vue.use(ActionSheet)
+Vue.use(ActionSheet);
 ```
 
 ```html
@@ -25,7 +25,8 @@ Vue.use(ActionSheet)
             <n-action-sheet
                 v-model="sheetVisible"
                 :actions="actions"
-                :cancelText="cancelText">
+                :cancelText="cancelText"
+                @selected="handelSelect">
             </n-action-sheet>
         </n-wing-blank>
     </div>
@@ -37,24 +38,9 @@ export default {
     data () {
         return {
             actions: [
-                {
-                    name:'拍照',
-                    method: (item,index)=>{
-                        this.$toast.info('调用action:'+index+'==='+item.name)
-                    }
-                },
-                {
-                    name:'从相册中选择',
-                    method: (item,index)=>{
-                        this.$toast.info('调用action:'+index+'==='+item.name)
-                    }
-                },
-                {
-                    name:'从网页中选择',
-                    method: (item,index)=>{
-                        this.$toast.info('调用action:'+index+'==='+item.name)
-                    }
-                }
+                '拍照',
+                '从相册中选择',
+                '从网页中选择'
             ],
             sheetVisible: false,
             cancelText:'取消'
@@ -63,10 +49,14 @@ export default {
     methods: {
         actionSheetInit(){
             this.sheetVisible = true
+            this.cancelText = '取消'
         },
         nocancelAction(){
             this.sheetVisible = true
             this.cancelText = ''
+        },
+        handelSelect(item,index){
+            this.$toast.info('item:'+item+'===index'+index)
         }
     }
 }
@@ -76,10 +66,10 @@ export default {
 
 ## API
 
-| 属性 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
-| v-model | 是否打开操作表 | boolean | false |
-| actions | actions 属性绑定一个由对象组成的数组，每个对象有 name 和 method 两个键，name 为菜单项的文本，method 为点击该菜单项的回调函数。 | Array | [] |
-| cancelText | 底部取消按钮文案 | string | 取消 |
-| titleText | 顶部标题文案 | string | 标题 |
-| closeOnClickModal | 点击蒙层关闭actionsheet | boolean | true |
+| 属性              | 说明                                                                                                                           | 类型    | 默认值 |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------ | ------- | ------ |
+| v-model           | 是否打开操作表                                                                                                                 | boolean | false  |
+| actions           | actions 属性绑定一个操作数组 | Array   | ['拍照','从相册中选择','从网页中选择']     |
+| cancelText        | 底部取消按钮文案                                                                                                               | string  | 取消   |
+| titleText         | 顶部标题文案                                                                                                                   | string  | 标题   |
+| closeOnClickModal | 点击蒙层关闭 actionsheet                                                                                                       | boolean | true   |
