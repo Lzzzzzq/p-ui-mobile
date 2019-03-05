@@ -65,6 +65,10 @@ export default {
               name: 'ActionSheet 动作面板',
               path: '/docs/actionSheet',
               id: '/docs/actionSheet'
+            }, {
+              name: 'Popover 气泡',
+              path: '/docs/popover',
+              id: '/docs/popover'
             }
           ]
         }

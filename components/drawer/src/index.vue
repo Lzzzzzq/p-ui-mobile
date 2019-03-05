@@ -1,8 +1,7 @@
 <template>
   <transition
-    name="fade"
-    enter-active-class="animated fadeIn fastest"
-    leave-active-class="animated fadeOut fastest"
+    enter-active-class="animated fadeIn faster"
+    leave-active-class="animated fadeOut faster"
     @after-enter="afterEnter"
     @after-leave="afterLeave"
   >
@@ -14,8 +13,8 @@
       @click.self="handleClickMask"
     >
       <transition
-        :enter-active-class="`animated fastest ${side === 'right' ? 'slideInRight' : 'slideInLeft'}`"
-        :leave-active-class="`animated fastest ${side === 'right' ? 'slideOutRight' : 'slideOutLeft'}`"
+        :enter-active-class="`animated faster ${side === 'right' ? 'slideInRight' : 'slideInLeft'}`"
+        :leave-active-class="`animated faster ${side === 'right' ? 'slideOutRight' : 'slideOutLeft'}`"
       >
         <div
           :class="{

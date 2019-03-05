@@ -8,6 +8,7 @@ import FlexItem from './flex/src/flex-item'
 import Drawer from './drawer/src/index'
 import Modal from './modal'
 import ActionSheet from './action-sheet/src/index'
+import Popover from './popover/src/index'
 
 const components = [
   Icon,
@@ -17,7 +18,8 @@ const components = [
   FlexWrap,
   FlexItem,
   Drawer,
-  ActionSheet
+  ActionSheet,
+  Popover
 ]
 
 const methods = [
@@ -51,7 +53,8 @@ const NewsUIMobile = {
   FlexItem,
   Drawer,
   Modal,
-  ActionSheet
+  ActionSheet,
+  Popover
 }
 
 export default NewsUIMobile

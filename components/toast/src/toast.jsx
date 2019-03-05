@@ -94,7 +94,6 @@ export default {
         }}
       >
         <transition
-          name="fade"
           enter-active-class="animated bounceIn faster"
           leave-active-class="animated zoomOut faster"
           on-after-enter={this.afterEnter}
