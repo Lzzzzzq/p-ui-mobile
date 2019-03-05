@@ -39,12 +39,13 @@ export default {
         }
       ],
       sheetVisible: false,
-      cancelText: '取消'
+      cancelText: ''
     }
   },
   methods: {
     actionSheetInit () {
       this.sheetVisible = true
+      this.cancelText = '取消'
     },
     nocancelAction () {
       this.sheetVisible = true
