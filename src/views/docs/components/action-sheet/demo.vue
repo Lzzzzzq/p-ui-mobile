@@ -7,12 +7,7 @@
       <n-button @click="nocancelAction()">不带cancel按钮action</n-button>
       <n-white-space></n-white-space>
 
-      <n-action-sheet
-        v-model="sheetVisible"
-        :actions="actions"
-        :cancelText="cancelText"
-        @selected="handelSelect"
-      ></n-action-sheet>
+      <n-action-sheet v-model="sheetVisible" :actions="actions" :cancelText="cancelText" @selected="handelSelect"></n-action-sheet>
     </n-wing-blank>
   </div>
 </template>

@@ -1,22 +1,23 @@
 <template>
-  <transition
-    enter-active-class="animated fadeIn faster"
-    leave-active-class="animated fadeOut faster"
-  >
-    <div :class="{
-[`${prefixCls}-wrap`]: true}" v-if="modelValue" @click.self="handleClickMask">
+  <transition enter-active-class="animated fadeIn faster" leave-active-class="animated fadeOut faster">
+    <div
+      :class="{
+        [`${prefixCls}-wrap`]: true
+      }"
+      v-if="modelValue"
+      @click.self="handleClickMask"
+    >
       <transition
         enter-active-class="animated slideInUp faster"
         leave-active-class="animated slideOutDown faster"
       >
         <div :class="{[`${prefixCls}-container`]: true}" v-if="currentValue">
-          <div :class="{
-[`${prefixCls}-title`]: true}" v-if="titleText">{{titleText}}</div>
-          <ul :class="{
-[`${prefixCls}-list`]:true}">
+          <div :class="{[`${prefixCls}-title`]: true}" v-if="titleText">{{titleText}}</div>
+          <ul :class="{[`${prefixCls}-list`]:true}">
             <li
               :class="{
-[`${prefixCls}-item`]:true}"
+                [`${prefixCls}-item`]:true
+              }"
               v-for="(item,index) in actions"
               :key="index"
               @click.stop="itemClick(item,index)"
@@ -24,7 +25,8 @@
           </ul>
           <div
             :class="{
-[`${prefixCls}-btn`]: true}"
+              [`${prefixCls}-btn`]: true
+            }"
             @click.stop="cancelAction"
             v-if="cancelText"
           >{{cancelText}}</div>

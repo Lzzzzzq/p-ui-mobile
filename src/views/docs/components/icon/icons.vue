@@ -87,9 +87,6 @@ export default {
         font-size: 32px;
         margin: 12px 0 8px;
       }
-      .iconName {
-        // margin-top: 20px;
-      }
     }
   }
 }
