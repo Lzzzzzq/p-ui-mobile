@@ -9,17 +9,21 @@ news-ui-mobile 设计规范上支持一定程度的样式定制，以满足业�
 以下是一些最常用的通用变量。
 
 ```less
+
 // 基本单位
 @hd: 1px;
 
 // 品牌色
-@brand-primary-color: #e93030;
-@brand-primary-color-tap: #d12b2b;
+@brand-primary-color: #108ee9;
+@brand-primary-color-tap: #0e80d2;
 @brand-primary-bg: #252525;
 @brand-link-color: #4691ee;
 @brand-success-color: #009900;
 @brand-warning-color: #fea31e;
 @brand-disabled-color: #ccc;
+
+// 透明度
+@opacity-disabled: 0.3;
 
 // 文本色
 @text-color-base: #323232;
@@ -39,6 +43,7 @@ news-ui-mobile 设计规范上支持一定程度的样式定制，以满足业�
 @bg-color-global: #f5f5f5;
 @bg-color-info: #999;
 @bg-color-mask: rgba(0, 0, 0, 0.7);
+
 ```
 
 样式中使用了 @hd 替代 1px，如您的项目中使用了 rem 解决方案，可将 @hd 替换为 xrem，例如：

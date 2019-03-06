@@ -17,15 +17,15 @@ Vue.use(Toast)
 <template>
   <n-wing-blank>
     <n-white-space></n-white-space>
-    <n-button @click="handleToastInfo" type="primary">弹个框</n-button>
+    <n-button @click="handleToastInfo">弹个框</n-button>
     <n-white-space></n-white-space>
-    <n-button @click="handleToastInfoMask" type="primary">弹个带蒙层的框，自定义高度</n-button>
+    <n-button @click="handleToastInfoMask">弹个带蒙层的框，自定义高度</n-button>
     <n-white-space></n-white-space>
-    <n-button @click="handleToastSuccess" type="primary">弹个成功框</n-button>
+    <n-button @click="handleToastSuccess">弹个成功框</n-button>
     <n-white-space></n-white-space>
-    <n-button @click="handleToastError" type="primary">弹个失败框</n-button>
+    <n-button @click="handleToastError">弹个失败框</n-button>
     <n-white-space></n-white-space>
-    <n-button @click="handleToastHtml" type="primary">弹出html</n-button>
+    <n-button @click="handleToastHtml">弹出html</n-button>
   </n-wing-blank>
 </template>
 
