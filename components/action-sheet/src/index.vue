@@ -3,31 +3,28 @@
     enter-active-class="animated fadeIn faster"
     leave-active-class="animated fadeOut faster"
   >
-    <div
-      :class="{
-        [`${prefixCls}-wrap`]: true
-      }"
-      v-if="modelValue"
-      @click.self="handleClickMask"
-    >
+    <div :class="{
+[`${prefixCls}-wrap`]: true}" v-if="modelValue" @click.self="handleClickMask">
       <transition
         enter-active-class="animated slideInUp faster"
         leave-active-class="animated slideOutDown faster"
       >
         <div :class="{[`${prefixCls}-container`]: true}" v-if="currentValue">
-          <div :class="{[`${prefixCls}-title`]: true}" v-if="titleText">{{titleText}}</div>
-          <ul :class="{[`${prefixCls}-list`]:true}">
+          <div :class="{
+[`${prefixCls}-title`]: true}" v-if="titleText">{{titleText}}</div>
+          <ul :class="{
+[`${prefixCls}-list`]:true}">
             <li
-              :class="{[`${prefixCls}-item`]:true}"
+              :class="{
+[`${prefixCls}-item`]:true}"
               v-for="(item,index) in actions"
               :key="index"
               @click.stop="itemClick(item,index)"
-            >{{item.name}}</li>
+            >{{item}}</li>
           </ul>
           <div
             :class="{
-              [`${prefixCls}-btn`]: true
-            }"
+[`${prefixCls}-btn`]: true}"
             @click.stop="cancelAction"
             v-if="cancelText"
           >{{cancelText}}</div>
@@ -90,9 +87,10 @@ export default {
   },
   methods: {
     itemClick (item, index) {
-      if (item.method && typeof item.method === 'function') {
-        item.method(item, index)
-      }
+      // if (item.method && typeof item.method === 'function') {
+      //     item.method(item, index)
+      // }
+      this.$emit('selected', item, index)
       this.currentValue = false
     },
     handleClickMask () {

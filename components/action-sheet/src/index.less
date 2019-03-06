@@ -18,7 +18,7 @@
     right: 0;
     bottom: 0;
     z-index: @z-index-mask+1;
-    background-color: @bg-color-card;
+    background-color: @bg-color-global;
   }
   &-list {
     margin: 0;
@@ -30,8 +30,9 @@
     height: 38 * @hd;
     line-height: 38 * @hd;
     font-size: @font-size-base;
-    color: @text-color-base;
+    color: @text-color-sec;
     text-align: center;
+    background-color: @bg-color-card;
   }
   &-btn {
     display: block;
@@ -41,7 +42,8 @@
     font-size: @font-size-base;
     color: @text-color-base;
     text-align: center;
-    text-align: center;
+    margin-top: 10 * @hd;
+    background-color: @bg-color-card;
   }
   &-item {
     &:first-child {
