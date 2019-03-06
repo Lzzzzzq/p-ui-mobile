@@ -7,9 +7,9 @@
 ```javascript
 // main.js
 
-import { ActionSheet } from "news-ui-mobile";
+import { ActionSheet } from 'news-ui-mobile'
 
-Vue.use(ActionSheet);
+Vue.use(ActionSheet)
 ```
 
 ```html
@@ -34,12 +34,12 @@ Vue.use(ActionSheet);
 
 <script>
 export default {
-  name: "ActionSheetDemo",
+  name: 'ActionSheetDemo',
   data() {
     return {
-      actions: ["拍照", "从相册中选择", "从网页中选择"],
+      actions: ['拍照', '从相册中选择', '从网页中选择'],
       sheetVisible: false,
-      cancelText: "取消"
+      cancelText: '取消'
     };
   },
   methods: {
