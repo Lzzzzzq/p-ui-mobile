@@ -3,13 +3,6 @@
 布局组件，基于 flex 布局的封装。
 
 ## 代码演示
-```javascript
-// main.js
-
-import { Flex } from 'news-ui-mobile'
-
-Vue.use(Flex)
-```
 
 ```html
 <!-- *.vue -->

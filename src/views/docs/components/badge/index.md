@@ -3,13 +3,6 @@
 徽标、标签，用于标注性提示。
 
 ## 代码演示
-```javascript
-// main.js
-
-import { Badge } from 'news-ui-mobile'
-
-Vue.use(Badge)
-```
 
 ```html
 <!-- *.vue -->

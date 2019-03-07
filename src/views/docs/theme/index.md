@@ -1,6 +1,6 @@
 # 定制主题
 
-news-ui-mobile 设计规范上支持一定程度的样式定制，以满足业务和品牌上多样化的视觉需求，包括但不限于主色、圆角、边框和部分组件的视觉定制。
+p-ui-mobile 设计规范上支持一定程度的样式定制，以满足业务和品牌上多样化的视觉需求，包括但不限于主色、圆角、边框和部分组件的视觉定制。
 
 ## 样式变量
 
@@ -19,6 +19,7 @@ news-ui-mobile 设计规范上支持一定程度的样式定制，以满足业�
 @brand-primary-bg: #252525;
 @brand-link-color: #4691ee;
 @brand-success-color: #009900;
+@brand-error-color: #e93030;
 @brand-warning-color: #fea31e;
 @brand-disabled-color: #ccc;
 

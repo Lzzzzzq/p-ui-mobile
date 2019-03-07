@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <div class="name">News-UI-Mobile</div>
+    <div class="name">P-UI-Mobile</div>
   </div>
 </template>
 

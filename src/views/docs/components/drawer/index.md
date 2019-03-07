@@ -4,14 +4,6 @@
 
 ## 代码演示
 
-```javascript
-// main.js
-
-import { Drawer } from 'news-ui-mobile'
-
-Vue.use(Drawer)
-```
-
 ```html
 <!-- *.vue -->
 <template>

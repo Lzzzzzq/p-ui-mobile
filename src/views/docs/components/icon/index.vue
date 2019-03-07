@@ -11,7 +11,7 @@ import Md from '@vc/md'
 // import Demo from '@vc/demo'
 import mdData from './index.md'
 import Icons from './icons'
-import cont from '@NewsUI/_util/iconfont/demo_fontclass.html'
+import cont from '@LIB/_util/iconfont/demo_fontclass.html'
 
 export default {
   components: {

@@ -3,13 +3,6 @@
 布局组件，两翼留出一定空白。
 
 ## 代码演示
-```javascript
-// main.js
-
-import { WingBlank } from 'news-ui-mobile'
-
-Vue.use(WingBlank)
-```
 
 ```html
 <!-- *.vue -->

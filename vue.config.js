@@ -28,7 +28,7 @@ module.exports = {
 
     config.resolve.alias
       .set('@src', resolve('src'))
-      .set('@NewsUI', resolve('components'))
+      .set('@LIB', resolve('components'))
       .set('@vc', resolve('src/components'))
   }
   // css: {

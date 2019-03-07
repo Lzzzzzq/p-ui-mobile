@@ -3,13 +3,6 @@
 在目标元素周围弹出气泡。
 
 ## 代码演示
-```javascript
-// main.js
-
-import { Popover } from 'news-ui-mobile'
-
-Vue.use(Popover)
-```
 
 ```html
 <!-- *.vue -->

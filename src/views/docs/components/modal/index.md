@@ -3,13 +3,6 @@
 用作显示重要信息，并请求用户反馈。
 
 ## 代码演示
-```javascript
-// main.js
-
-import { Modal } from 'news-ui-mobile'
-
-Vue.use(Modal)
-```
 
 ```html
 <!-- *.vue -->

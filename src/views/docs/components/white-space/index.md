@@ -3,13 +3,6 @@
 布局组件，用于模块间距。
 
 ## 代码演示
-```javascript
-// main.js
-
-import { WhiteSpace } from 'news-ui-mobile'
-
-Vue.use(WhiteSpace)
-```
 
 ```html
 <!-- *.vue -->

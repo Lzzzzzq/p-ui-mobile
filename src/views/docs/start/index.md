@@ -5,11 +5,11 @@
 ### 使用 npm 或者 yarn 进行安装
 
 ```bash
-$ npm install --save news-ui-mobile
+$ npm install --save p-ui-mobile
 ```
 
 ```bash
-& yarn add news-ui-mobile
+& yarn add p-ui-mobile
 ```
 
 ## 使用
@@ -28,12 +28,12 @@ main.js
 
 ```javascript
 import Vue from 'vue'
-import NewsUI from 'news-ui-mobile'
-import 'news-ui-mobile/lib/news-ui-mobile.css'
+import PUI from 'p-ui-mobile'
+import 'p-ui-mobile/lib/p-ui-mobile.css'
 import App from './App'
 Vue.config.productionTip = false
 
-Vue.use(NewsUI)
+Vue.use(PUI)
 
 /* eslint-disable no-new */
 new Vue({
@@ -58,7 +58,7 @@ module.exports = {
   plugins: [
     [
       'import', {
-        'libraryName': 'news-ui-mobile',
+        'libraryName': 'p-ui-mobile',
         'libraryDirectory': 'components',
         'style': false
       }
@@ -69,7 +69,7 @@ module.exports = {
 
 ```javascript
 import Vue from 'vue'
-import {Button, Modal} from 'news-ui-mobile'
+import {Button, Modal} from 'p-ui-mobile'
 import App from './App'
 Vue.config.productionTip = false
 

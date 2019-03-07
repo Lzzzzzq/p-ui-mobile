@@ -1,3 +1,3 @@
 export default {
-  prefixCls: 'nui-mobile'
+  prefixCls: 'pui-mobile'
 }

@@ -4,14 +4,6 @@
 
 ## 代码演示
 
-```javascript
-// main.js
-
-import { Button } from 'news-ui-mobile'
-
-Vue.use(Button)
-```
-
 ```html
 <!-- *.vue -->
 

@@ -46,8 +46,12 @@ export default {
   border-right: 1px solid @line-color-light;
   padding-top: 30px;
   box-sizing: border-box;
-  overflow-y: auto;
+  overflow-y: hidden;
   background-color: #fff;
+
+  &:hover {
+    overflow-y: auto;
+  }
 }
 </style>
 <style lang="less">

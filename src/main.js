@@ -3,11 +3,11 @@ import App from './App.vue'
 import router from './router'
 
 import animated from 'animate.css'
-import NewsUI from '@NewsUI'
+import LIB from '@LIB'
 
 Vue.config.productionTip = false
 
-Vue.use(NewsUI)
+Vue.use(LIB)
 Vue.use(animated)
 
 new Vue({

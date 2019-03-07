@@ -3,13 +3,6 @@
 轻提示组件，入参可为字符串或对象。
 
 ## 代码演示
-```javascript
-// main.js
-
-import { Toast } from 'news-ui-mobile'
-
-Vue.use(Toast)
-```
 
 ```html
 <!-- *.vue -->

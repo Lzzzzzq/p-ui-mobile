@@ -1,12 +1,12 @@
 {
-  "name": "news-ui-mobile",
+  "name": "p-ui-mobile",
   "version": "0.1.0",
   "private": false,
-  "main": "lib/news-ui-mobile.common.js",
+  "main": "lib/p-ui-mobile.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build:lib": "vue-cli-service build --target lib --name news-ui-mobile ./components/index.js --dest lib",
+    "build:lib": "vue-cli-service build --target lib --name p-ui-mobile ./components/index.js --dest lib",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
