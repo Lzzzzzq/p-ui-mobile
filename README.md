@@ -1,3 +1,3 @@
-# news-ui-mobile
+# p-ui-mobile
 
-![组件](https://i.loli.net/2019/03/06/5c7fb3824380b.png)
+![组件](https://i.loli.net/2019/03/07/5c8105e04cfdf.png)
