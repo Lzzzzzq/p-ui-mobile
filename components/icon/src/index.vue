@@ -9,7 +9,7 @@
 import config from '../../_util/config'
 
 export default {
-  name: 'NIcon',
+  name: 'PIcon',
   props: {
     type: {
       type: String,

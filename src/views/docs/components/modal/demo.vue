@@ -1,13 +1,13 @@
 <template>
-  <n-wing-blank>
-    <n-white-space></n-white-space>
-    <n-button @click="handleShowModalBasic">基本</n-button>
-    <n-white-space></n-white-space>
-    <n-button @click="handleShowConfirm">confirm</n-button>
-    <n-white-space></n-white-space>
-    <n-button @click="handleShowHtml">html</n-button>
-    <n-white-space></n-white-space>
-  </n-wing-blank>
+  <p-wing-blank>
+    <p-white-space></p-white-space>
+    <p-button @click="handleShowModalBasic">基本</p-button>
+    <p-white-space></p-white-space>
+    <p-button @click="handleShowConfirm">confirm</p-button>
+    <p-white-space></p-white-space>
+    <p-button @click="handleShowHtml">html</p-button>
+    <p-white-space></p-white-space>
+  </p-wing-blank>
 </template>
 
 <script>
@@ -55,7 +55,7 @@ export default {
         okText: 'Ok',
         cancelText: 'Cancel',
         domNode: (h) => (
-          <n-button type="primary" on-click={this.handleClickBtn}>按钮</n-button>
+          <p-button type="primary" on-click={this.handleClickBtn}>按钮</p-button>
         ),
         jsx: true,
         closeByTouchMask: false

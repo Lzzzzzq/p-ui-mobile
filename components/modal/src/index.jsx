@@ -4,7 +4,7 @@ import FlexItem from '../../flex/src/flex-item'
 import './index.less'
 
 const Modal = {
-  name: 'NModal',
+  name: 'PModal',
   data () {
     return {
       wrapVisible: false,

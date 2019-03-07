@@ -1,79 +1,79 @@
 <template>
-  <n-wing-blank>
-    <n-white-space></n-white-space>
-    <n-badge>1234</n-badge>
+  <p-wing-blank>
+    <p-white-space></p-white-space>
+    <p-badge>1234</p-badge>
     &nbsp;&nbsp;
-    <n-badge size="small">1234</n-badge>
+    <p-badge size="small">1234</p-badge>
     &nbsp;&nbsp;
-    <n-badge radiusCircle>1234</n-badge>
+    <p-badge radiusCircle>1234</p-badge>
     &nbsp;&nbsp;
-    <n-badge size="small" radiusCircle>1234</n-badge>
+    <p-badge size="small" radiusCircle>1234</p-badge>
 
-    <n-white-space></n-white-space>
-    <n-badge type="error">1234</n-badge>
+    <p-white-space></p-white-space>
+    <p-badge type="error">1234</p-badge>
     &nbsp;&nbsp;
-    <n-badge type="error" size="small">1234</n-badge>
+    <p-badge type="error" size="small">1234</p-badge>
     &nbsp;&nbsp;
-    <n-badge type="error" radiusCircle>1234</n-badge>
+    <p-badge type="error" radiusCircle>1234</p-badge>
     &nbsp;&nbsp;
-    <n-badge type="error" size="small" radiusCircle>1234</n-badge>
+    <p-badge type="error" size="small" radiusCircle>1234</p-badge>
 
-    <n-white-space></n-white-space>
-    <n-badge type="warning">1234</n-badge>
+    <p-white-space></p-white-space>
+    <p-badge type="warning">1234</p-badge>
     &nbsp;&nbsp;
-    <n-badge type="warning" size="small">1234</n-badge>
+    <p-badge type="warning" size="small">1234</p-badge>
     &nbsp;&nbsp;
-    <n-badge type="warning" radiusCircle>1234</n-badge>
+    <p-badge type="warning" radiusCircle>1234</p-badge>
     &nbsp;&nbsp;
-    <n-badge type="warning" size="small" radiusCircle>1234</n-badge>
+    <p-badge type="warning" size="small" radiusCircle>1234</p-badge>
 
-    <n-white-space></n-white-space>
-    <n-badge type="success">1234</n-badge>
+    <p-white-space></p-white-space>
+    <p-badge type="success">1234</p-badge>
     &nbsp;&nbsp;
-    <n-badge type="success" size="small">1234</n-badge>
+    <p-badge type="success" size="small">1234</p-badge>
     &nbsp;&nbsp;
-    <n-badge type="success" radiusCircle>1234</n-badge>
+    <p-badge type="success" radiusCircle>1234</p-badge>
     &nbsp;&nbsp;
-    <n-badge type="success" size="small" radiusCircle>1234</n-badge>
+    <p-badge type="success" size="small" radiusCircle>1234</p-badge>
 
-    <n-white-space></n-white-space>
-    <n-badge border>1234</n-badge>
+    <p-white-space></p-white-space>
+    <p-badge border>1234</p-badge>
     &nbsp;&nbsp;
-    <n-badge border size="small">1234</n-badge>
+    <p-badge border size="small">1234</p-badge>
     &nbsp;&nbsp;
-    <n-badge border radiusCircle>1234</n-badge>
+    <p-badge border radiusCircle>1234</p-badge>
     &nbsp;&nbsp;
-    <n-badge border size="small" radiusCircle>1234</n-badge>
+    <p-badge border size="small" radiusCircle>1234</p-badge>
 
-    <n-white-space></n-white-space>
-    <n-badge type="error" border>1234</n-badge>
+    <p-white-space></p-white-space>
+    <p-badge type="error" border>1234</p-badge>
     &nbsp;&nbsp;
-    <n-badge type="error" border size="small">1234</n-badge>
+    <p-badge type="error" border size="small">1234</p-badge>
     &nbsp;&nbsp;
-    <n-badge type="error" border radiusCircle>1234</n-badge>
+    <p-badge type="error" border radiusCircle>1234</p-badge>
     &nbsp;&nbsp;
-    <n-badge type="error" border size="small" radiusCircle>1234</n-badge>
+    <p-badge type="error" border size="small" radiusCircle>1234</p-badge>
 
-    <n-white-space></n-white-space>
-    <n-badge type="warning" border>1234</n-badge>
+    <p-white-space></p-white-space>
+    <p-badge type="warning" border>1234</p-badge>
     &nbsp;&nbsp;
-    <n-badge type="warning" border size="small">1234</n-badge>
+    <p-badge type="warning" border size="small">1234</p-badge>
     &nbsp;&nbsp;
-    <n-badge type="warning" border radiusCircle>1234</n-badge>
+    <p-badge type="warning" border radiusCircle>1234</p-badge>
     &nbsp;&nbsp;
-    <n-badge type="warning" border size="small" radiusCircle>1234</n-badge>
+    <p-badge type="warning" border size="small" radiusCircle>1234</p-badge>
 
-    <n-white-space></n-white-space>
-    <n-badge type="success" border>1234</n-badge>
+    <p-white-space></p-white-space>
+    <p-badge type="success" border>1234</p-badge>
     &nbsp;&nbsp;
-    <n-badge type="success" border size="small">1234</n-badge>
+    <p-badge type="success" border size="small">1234</p-badge>
     &nbsp;&nbsp;
-    <n-badge type="success" border radiusCircle>1234</n-badge>
+    <p-badge type="success" border radiusCircle>1234</p-badge>
     &nbsp;&nbsp;
-    <n-badge type="success" border size="small" radiusCircle>1234</n-badge>
-    <n-badge type="success" border size="small" radiusCircle></n-badge>
+    <p-badge type="success" border size="small" radiusCircle>1234</p-badge>
+    <p-badge type="success" border size="small" radiusCircle></p-badge>
 
-  </n-wing-blank>
+  </p-wing-blank>
 </template>
 
 <script>

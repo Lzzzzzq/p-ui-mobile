@@ -1,27 +1,27 @@
 <template>
-  <n-wing-blank>
-    <n-white-space></n-white-space>
-    <n-flex-wrap>
-      <n-flex-item><div class="flexItem">Block</div></n-flex-item>
-      <n-flex-item><div class="flexItem">Block</div></n-flex-item>
-      <n-flex-item><div class="flexItem">Block</div></n-flex-item>
-      <n-flex-item><div class="flexItem">Block</div></n-flex-item>
-    </n-flex-wrap>
-    <n-flex-wrap>
-      <n-flex-item><div class="flexItem">Block</div></n-flex-item>
-      <n-flex-item><div class="flexItem">Block</div></n-flex-item>
-      <n-flex-item><div class="flexItem">Block</div></n-flex-item>
-    </n-flex-wrap>
-    <n-flex-wrap>
-      <n-flex-item><div class="flexItem">Block</div></n-flex-item>
-    </n-flex-wrap>
-    <n-white-space></n-white-space>
-    <n-flex-wrap direction="column">
-      <n-flex-item><div class="flexItem">Block</div></n-flex-item>
-      <n-flex-item><div class="flexItem">Block</div></n-flex-item>
-      <n-flex-item><div class="flexItem">Block</div></n-flex-item>
-    </n-flex-wrap>
-  </n-wing-blank>
+  <p-wing-blank>
+    <p-white-space></p-white-space>
+    <p-flex-wrap>
+      <p-flex-item><div class="flexItem">Block</div></p-flex-item>
+      <p-flex-item><div class="flexItem">Block</div></p-flex-item>
+      <p-flex-item><div class="flexItem">Block</div></p-flex-item>
+      <p-flex-item><div class="flexItem">Block</div></p-flex-item>
+    </p-flex-wrap>
+    <p-flex-wrap>
+      <p-flex-item><div class="flexItem">Block</div></p-flex-item>
+      <p-flex-item><div class="flexItem">Block</div></p-flex-item>
+      <p-flex-item><div class="flexItem">Block</div></p-flex-item>
+    </p-flex-wrap>
+    <p-flex-wrap>
+      <p-flex-item><div class="flexItem">Block</div></p-flex-item>
+    </p-flex-wrap>
+    <p-white-space></p-white-space>
+    <p-flex-wrap direction="column">
+      <p-flex-item><div class="flexItem">Block</div></p-flex-item>
+      <p-flex-item><div class="flexItem">Block</div></p-flex-item>
+      <p-flex-item><div class="flexItem">Block</div></p-flex-item>
+    </p-flex-wrap>
+  </p-wing-blank>
 </template>
 
 <script>

@@ -3,7 +3,7 @@ import config from '../../_util/config'
 import './toast.less'
 
 export default {
-  name: 'NToast',
+  name: 'PToast',
   components: {
     Icon
   },

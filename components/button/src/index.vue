@@ -40,7 +40,7 @@
 import config from '../../_util/config'
 
 export default {
-  name: 'NButton',
+  name: 'PButton',
   components: {
     Icon: () => import('../../icon')
   },

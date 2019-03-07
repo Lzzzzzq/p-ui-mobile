@@ -4,7 +4,7 @@ import FlexWrap from '../../flex/src/flex-wrap'
 import './index.less'
 
 export default {
-  name: 'NPopover',
+  name: 'PPopover',
   props: {
     placement: {
       type: String,

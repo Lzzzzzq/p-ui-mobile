@@ -8,7 +8,7 @@
 import config from '../../_util/config'
 
 export default {
-  name: 'NWhiteSpace',
+  name: 'PWhiteSpace',
   props: {
     size: {
       type: String,

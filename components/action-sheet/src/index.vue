@@ -39,7 +39,7 @@
 import config from '../../_util/config'
 
 export default {
-  name: 'NActionSheet',
+  name: 'PActionSheet',
   data () {
     return {
       modelValue: false,

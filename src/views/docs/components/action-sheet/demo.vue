@@ -1,14 +1,14 @@
 <template>
   <div style="min-height: 100vh">
-    <n-wing-blank>
-      <n-white-space></n-white-space>
-      <n-button @click="actionSheetInit()">上拉action</n-button>
-      <n-white-space></n-white-space>
-      <n-button @click="nocancelAction()">不带cancel按钮action</n-button>
-      <n-white-space></n-white-space>
+    <p-wing-blank>
+      <p-white-space></p-white-space>
+      <p-button @click="actionSheetInit()">上拉action</p-button>
+      <p-white-space></p-white-space>
+      <p-button @click="nocancelAction()">不带cancel按钮action</p-button>
+      <p-white-space></p-white-space>
 
-      <n-action-sheet v-model="sheetVisible" :actions="actions" :cancelText="cancelText" @selected="handelSelect"></n-action-sheet>
-    </n-wing-blank>
+      <p-action-sheet v-model="sheetVisible" :actions="actions" :cancelText="cancelText" @selected="handelSelect"></p-action-sheet>
+    </p-wing-blank>
   </div>
 </template>
 

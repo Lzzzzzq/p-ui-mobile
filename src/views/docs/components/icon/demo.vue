@@ -1,5 +1,5 @@
 <template>
-  <n-icon type="icon-forward"></n-icon>
+  <p-icon type="icon-forward"></p-icon>
 </template>
 
 <script>

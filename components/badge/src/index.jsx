@@ -4,7 +4,7 @@ import FlexWrap from '../../flex/src/flex-wrap'
 import './index.less'
 
 export default {
-  name: 'NBadge',
+  name: 'PBadge',
   props: {
     size: {
       type: String,

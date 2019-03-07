@@ -38,7 +38,7 @@
 import config from '../../_util/config'
 
 export default {
-  name: 'NDrawer',
+  name: 'PDrawer',
   props: {
     value: {
       type: Boolean,

@@ -11,7 +11,7 @@
 import config from '../../_util/config'
 
 export default {
-  name: 'NWingBlank',
+  name: 'PWingBlank',
   props: {
     size: {
       type: String,
