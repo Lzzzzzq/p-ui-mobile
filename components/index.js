@@ -9,6 +9,7 @@ import Drawer from './drawer/src/index'
 import Modal from './modal'
 import ActionSheet from './action-sheet/src/index'
 import Popover from './popover/src/index'
+import Badge from './badge/index'
 
 const components = [
   Icon,
@@ -19,7 +20,8 @@ const components = [
   FlexItem,
   Drawer,
   ActionSheet,
-  Popover
+  Popover,
+  Badge
 ]
 
 const methods = [
@@ -44,17 +46,8 @@ if (typeof window !== 'undefined' && window.Vue) {
 const NewsUIMobile = {
   version: '0.0.1',
   install,
-  Toast,
-  Icon,
-  WingBlank,
-  Button,
-  WhiteSpace,
-  FlexWrap,
-  FlexItem,
-  Drawer,
-  Modal,
-  ActionSheet,
-  Popover
+  ...components,
+  ...methods
 }
 
 export default NewsUIMobile

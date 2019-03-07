@@ -48,6 +48,10 @@ export default {
               name: 'Button 按钮',
               path: '/docs/button',
               id: '/docs/button'
+            }, {
+              name: 'Badge 徽标',
+              path: '/docs/badge',
+              id: '/docs/badge'
             }
           ]
         }, {

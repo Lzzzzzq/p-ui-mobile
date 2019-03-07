@@ -74,6 +74,11 @@ export default new Router({
           path: 'popover',
           name: 'popoverDoc',
           component: () => import(/* webpackChunkName: "popoverDoc" */ './views/docs/components/popover/index.vue')
+        },
+        {
+          path: 'badge',
+          name: 'badgeDoc',
+          component: () => import(/* webpackChunkName: "badgeDoc" */ './views/docs/components/badge/index.vue')
         }
       ]
     }, {
@@ -130,6 +135,11 @@ export default new Router({
           path: 'popover',
           name: 'popoverDemo',
           component: () => import(/* webpackChunkName: "popoverDemo" */ './views/docs/components/popover/demo.vue')
+        },
+        {
+          path: 'badge',
+          name: 'badgeDemo',
+          component: () => import(/* webpackChunkName: "badgeDemo" */ './views/docs/components/badge/demo.vue')
         }
       ]
     }

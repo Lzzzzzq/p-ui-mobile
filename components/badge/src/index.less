@@ -1,0 +1,92 @@
+@import '../../style/index.less';
+
+@badge-prefix-cls: ~'@{prefix-cls}-badge';
+
+.@{badge-prefix-cls} {
+
+  &-wrap {
+    display: inline-block;
+  }
+
+  &-item {
+    box-sizing: border-box;
+  }
+
+  // 尺寸
+  &-item&-normal {
+    height: @badge-size-base;
+    line-height: @line-height-base;
+    padding: 0 @badge-padding-base;
+    font-size: @font-size-base;
+    border-radius: @border-radius-sm;
+  }
+  &-item&-small {
+    height: @badge-size-sm;
+    line-height: @line-height-base;
+    padding: 0 @badge-padding-sm;
+    font-size: @font-size-sm;
+    border-radius: @border-radius-sm;
+  }
+
+  // 纯色
+  &-primary {
+    background-color: @brand-primary-color;
+    color: @text-color-white;
+  }
+  &-error {
+    background-color: @brand-error-color;
+    color: @text-color-white;
+  }
+  &-warning {
+    background-color: @brand-warning-color;
+    color: @text-color-white;
+  }
+  &-success {
+    background-color: @brand-success-color;
+    color: @text-color-white;
+  }
+
+  // 带边框
+  &-primary&-border {
+    background-color: @bg-color-card;
+    border: @hd solid @brand-primary-color;
+    color: @brand-primary-color;
+  }
+
+  &-error&-border {
+    background-color: @bg-color-card;
+    border: @hd solid @brand-error-color;
+    color: @brand-error-color;
+  }
+
+  &-warning&-border {
+    background-color: @bg-color-card;
+    border: @hd solid @brand-warning-color;
+    color: @brand-warning-color;
+  }
+
+  &-success&-border {
+    background-color: @bg-color-card;
+    border: @hd solid @brand-success-color;
+    color: @brand-success-color;
+  }
+
+  &-normal&-border {
+    padding: 0 @badge-padding-base - @hd;
+  }
+
+  &-small&-border {
+    padding: 0 @badge-padding-sm - @hd;
+  }
+
+  // 圆角
+  &-normal&-circle {
+    border-radius: @badge-size-base / 2;
+    padding: 0 @badge-padding-base * 1.2;
+  }
+  // 圆角
+  &-small&-circle {
+    border-radius: @badge-size-sm / 2;
+    padding: 0 @badge-padding-sm * 1.2;
+  }
+}
