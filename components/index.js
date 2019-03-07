@@ -43,11 +43,11 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 }
 
-const NewsUIMobile = {
+const PUIMobile = {
   version: '0.0.1',
   install,
   ...components,
   ...methods
 }
 
-export default NewsUIMobile
+export default PUIMobile
