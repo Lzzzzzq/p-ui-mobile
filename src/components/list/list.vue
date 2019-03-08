@@ -64,7 +64,7 @@ export default {
     line-height: 40px;
     font-family: @font-family-base;
     font-size: @font-size-base;
-    color: @text-color-base;
+    color: @text-color-sec;
     cursor: pointer;
     padding-left: 40px;
     transition: all 0.3s;
@@ -88,11 +88,11 @@ export default {
     // padding-left: 16px;
   }
   .treeParentNode {
-    color: @text-color-ass;
+    color: @text-color-tip;
     cursor: auto;
   }
   .treeRootNode {
-    color: @text-color-base;
+    color: @text-color-sec;
     cursor: pointer;
   }
   .treeNodeActive {

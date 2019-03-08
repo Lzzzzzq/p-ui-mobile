@@ -10,6 +10,7 @@ import Modal from './modal'
 import ActionSheet from './action-sheet/src/index'
 import Popover from './popover/src/index'
 import Badge from './badge/index'
+import Switch from './switch/index'
 
 const components = [
   Icon,
@@ -21,7 +22,8 @@ const components = [
   Drawer,
   ActionSheet,
   Popover,
-  Badge
+  Badge,
+  Switch
 ]
 
 const methods = [

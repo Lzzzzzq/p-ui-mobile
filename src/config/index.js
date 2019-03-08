@@ -58,6 +58,10 @@ export default {
           name: 'Feedback',
           child: [
             {
+              name: 'Switch 开关',
+              path: '/docs/switch',
+              id: '/docs/switch'
+            }, {
               name: 'Toast 轻提示',
               path: '/docs/toast',
               id: '/docs/toast'
