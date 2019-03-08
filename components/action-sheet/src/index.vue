@@ -50,7 +50,7 @@ export default {
     value: {
       default: false
     },
-    closeOnClickModal: {
+    closeByTouchMask: {
       default: true
     },
     titleText: {
@@ -96,7 +96,7 @@ export default {
       this.currentValue = false
     },
     handleClickMask () {
-      if (!this.closeOnClickModal) return
+      if (!this.closeByTouchMask) return
       this.currentValue = false
     },
     cancelAction () {
