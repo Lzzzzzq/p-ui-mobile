@@ -14,10 +14,10 @@
 
     <p-flex-wrap>
 
-      <p-switch v-model="AActive" type="success" @change="handleChange"></p-switch>
-      <p-switch v-model="BActive" type="success" @change="handleChange"></p-switch>
-      <p-switch v-model="CActive" type="success" disabled @change="handleChange"></p-switch>
-      <p-switch v-model="DActive" type="success" disabled @change="handleChange"></p-switch>
+      <p-switch v-model="AActive" type="success"></p-switch>
+      <p-switch v-model="BActive" type="success"></p-switch>
+      <p-switch v-model="CActive" type="success" disabled></p-switch>
+      <p-switch v-model="DActive" type="success" disabled></p-switch>
 
     </p-flex-wrap>
 
@@ -25,10 +25,10 @@
 
     <p-flex-wrap>
 
-      <p-switch v-model="AActive" type="error" @change="handleChange"></p-switch>
-      <p-switch v-model="BActive" type="error" @change="handleChange"></p-switch>
-      <p-switch v-model="CActive" type="error" disabled @change="handleChange"></p-switch>
-      <p-switch v-model="DActive" type="error" disabled @change="handleChange"></p-switch>
+      <p-switch v-model="AActive" type="error"></p-switch>
+      <p-switch v-model="BActive" type="error"></p-switch>
+      <p-switch v-model="CActive" type="error" disabled></p-switch>
+      <p-switch v-model="DActive" type="error" disabled></p-switch>
 
     </p-flex-wrap>
 
@@ -36,10 +36,10 @@
 
     <p-flex-wrap>
 
-      <p-switch v-model="AActive" type="warning" @change="handleChange"></p-switch>
-      <p-switch v-model="BActive" type="warning" @change="handleChange"></p-switch>
-      <p-switch v-model="CActive" type="warning" disabled @change="handleChange"></p-switch>
-      <p-switch v-model="DActive" type="warning" disabled @change="handleChange"></p-switch>
+      <p-switch v-model="AActive" type="warning"></p-switch>
+      <p-switch v-model="BActive" type="warning"></p-switch>
+      <p-switch v-model="CActive" type="warning" disabled></p-switch>
+      <p-switch v-model="DActive" type="warning" disabled></p-switch>
 
     </p-flex-wrap>
   </p-wing-blank>

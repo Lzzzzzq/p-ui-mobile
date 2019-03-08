@@ -20,19 +20,26 @@ export default {
   },
   data () {
     return {
+      active: false
     }
   },
   computed: {
-    prefixCls: () => `${config.prefixCls}-switch`,
-    active: function () {
-      return this.value
+    prefixCls: () => `${config.prefixCls}-switch`
+  },
+  watch: {
+    value: {
+      handler: function (newState) {
+        this.active = newState
+      },
+      immediate: true
     }
   },
   methods: {
     handleClick: function () {
       if (this.disabled) return
-      this.$emit('input', !this.value)
-      this.$emit('change', !this.value)
+      this.$emit('input', !this.active)
+      this.$emit('change', !this.active)
+      this.active = !this.active
     }
   },
   render (h) {
