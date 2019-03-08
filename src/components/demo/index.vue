@@ -23,7 +23,7 @@ export default {
   },
   computed: {
     url: function () {
-      return `//${window.location.host}/#${this.src}`
+      return `//${window.location.host + window.location.pathname}#${this.src}`
     }
   }
 }
