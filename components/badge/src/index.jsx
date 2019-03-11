@@ -6,10 +6,6 @@ import './index.less'
 export default {
   name: 'PBadge',
   props: {
-    size: {
-      type: String,
-      default: () => 'normal'
-    },
     type: {
       type: String,
       default: () => 'primary'
@@ -21,6 +17,10 @@ export default {
     radiusCircle: {
       type: Boolean,
       default: () => false
+    },
+    height: {
+      type: String,
+      default: () => ''
     }
   },
   computed: {
@@ -30,10 +30,10 @@ export default {
     const {
       $slots,
       prefixCls,
-      size,
       type,
       border,
-      radiusCircle
+      radiusCircle,
+      height
     } = this
 
     if (!$slots || !$slots.default || !$slots.default[0]) {
@@ -52,12 +52,15 @@ export default {
           class={
             classnames({
               [`${prefixCls}-item`]: true,
-              [`${prefixCls}-${size}`]: true,
               [`${prefixCls}-${type}`]: true,
               [`${prefixCls}-border`]: border,
               [`${prefixCls}-circle`]: radiusCircle
             })
           }
+          style={{
+            height: height || '',
+            borderRadius: height ? parseFloat(height) / 2 + height.replace(/[0-9]*/g, '') : ''
+          }}
           alignContent="center"
         >
           {$slots.default && $slots.default[0]}
