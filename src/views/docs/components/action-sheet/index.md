@@ -5,25 +5,11 @@
 ## 代码演示
 
 ```html
-<!-- *.vue -->
 
-<template>
-  <div style="min-height: 100vh">
-    <p-wing-blank>
-      <p-white-space></p-white-space>
-      <p-button @click="actionSheetInit()">上拉action</p-button>
-      <p-white-space></p-white-space>
-      <p-button @click="nocancelAction()">不带cancel按钮action</p-button>
-      <p-white-space></p-white-space>
-
-      <p-action-sheet v-model="sheetVisible" :actions="actions" :cancelText="cancelText" @selected="handelSelect"></p-action-sheet>
-    </p-wing-blank>
-  </div>
-</template>
+<p-action-sheet v-model="sheetVisible" :actions="actions" :cancelText="cancelText" @selected="handelSelect"></p-action-sheet>
 
 <script>
 export default {
-  name: 'ActionSheetDemo',
   data () {
     return {
       actions: ['拍照', '从相册中选择', '从网页中选择'],

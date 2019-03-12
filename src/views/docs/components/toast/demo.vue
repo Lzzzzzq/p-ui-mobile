@@ -1,15 +1,15 @@
 <template>
   <p-wing-blank>
     <p-white-space></p-white-space>
-    <p-button @click="handleToastInfo">弹个框</p-button>
+    <p-button @click="handleToastInfo">普通弹框</p-button>
     <p-white-space></p-white-space>
-    <p-button @click="handleToastInfoMask">弹个带蒙层的框，自定义高度</p-button>
+    <p-button @click="handleToastInfoMask">带蒙层弹框，自定义高度</p-button>
     <p-white-space></p-white-space>
-    <p-button @click="handleToastSuccess">弹个成功框</p-button>
+    <p-button @click="handleToastSuccess">成功弹框</p-button>
     <p-white-space></p-white-space>
-    <p-button @click="handleToastError">弹个失败框</p-button>
+    <p-button @click="handleToastError">失败弹框</p-button>
     <p-white-space></p-white-space>
-    <p-button @click="handleToastHtml">弹出html</p-button>
+    <p-button @click="handleToastHtml">自定义html弹框</p-button>
   </p-wing-blank>
 </template>
 
@@ -45,11 +45,7 @@ export default {
       this.$toast.info({
         domNode: (h) => {
           return (
-            <div>
-              <p-button type="primary" inline on-click={this.handleToastError}>
-                这是一个 button
-              </p-button>
-            </div>
+            <p-button type="primary">使用 jsx 语法</p-button>
           )
         },
         mask: true,

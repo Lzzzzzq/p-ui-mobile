@@ -5,11 +5,7 @@
 ## 代码演示
 
 ```html
-<!-- *.vue -->
-
-<template>
-  <p-icon type="icon-forward"></p-icon>
-</template>
+<p-icon type="icon-forward"></p-icon>
 ```
 ## API
 

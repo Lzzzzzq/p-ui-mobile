@@ -4,116 +4,42 @@
 
 ## 代码演示
 
+### 尺寸
+
 ```html
-<!-- *.vue -->
+<p-button>default</p-button>
+<p-button size="small">default small</p-button>
+```
 
-<template>
-  <p-wing-blank>
-    <p-white-space></p-white-space>
-    <div>size</div>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" type="primary">primary</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" type="primary" size="small" :activeStyle="false">primary small</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" type="primary" inline>primary</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" type="primary" size="small" inline>primary small</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" type="primary" size="small" icon="icon-pluscircleo" inline>按钮 primary small icon</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" type="info" inline>info</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" type="info" size="small" inline>info small</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" type="info" size="small" inline  icon="icon-pluscircleo">info small</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" type="text" inline>text</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" type="text" size="small" inline>text small</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" type="icon" inline  icon="icon-pluscircleo">icon</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" type="icon" size="small" inline  icon="icon-pluscircleo">icon small</p-button>
-    <p-white-space></p-white-space>
+### 类型
 
-    <p-white-space></p-white-space>
-    <div>primary</div>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" type="primary">primary</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" type="primary" icon="icon-banckward">primary</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" disabled type="primary">disabled primary</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" inline type="primary">primary inline</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" inline disabled type="primary">primary inline disabled</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" inline type="primary" icon="icon-banckward">primary inline icon</p-button>
-    <p-white-space></p-white-space>
+```html
+<p-button>default</p-button>
+<p-button type="primary">primary</p-button>
+<p-button type="info">info</p-button>
+<p-button type="text">text</p-button>
+<p-button type="icon" icon="icon-pluscircleo">icon</p-button>
+```
 
-    <div>default</div>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick">default</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" disabled>disabled</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" inline>default inline</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" inline disabled>default inline disabled</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" inline icon="icon-banckward">primary inline icon</p-button>
-    <p-white-space></p-white-space>
+### 行内
 
-    <div>info</div>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" type="info">info</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" disabled type="info">disabled info</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" inline type="info">info inline</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" inline disabled type="info">info inline disabled</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" inline icon="icon-banckward" type="info">info inline icon</p-button>
-    <p-white-space></p-white-space>
+```html
+<p-button inline>default inline</p-button>
+<p-button size="small" inline>default small inline</p-button>
+```
 
-    <div>text</div>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" type="text">text</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" inline type="text">text inline</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" inline type="text" disabled>text inline disabled</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" inline type="text" icon="icon-pluscircleo">添加</p-button>
-    <p-white-space></p-white-space>
+### 带图标
 
-    <div>icon</div>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" type="icon" icon="icon-pluscircleo">icon</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" inline type="icon" disabled icon="icon-pluscircleo">添加</p-button>
-    <p-white-space></p-white-space>
-    <p-button @click="handleClick" inline type="icon" icon="icon-pluscircleo"></p-button>
-    <p-white-space></p-white-space>
+```html
+<p-button icon="icon-pluscircleo" inline>icon</p-button>
+<p-button size="small" icon="icon-pluscircleo" inline>icon</p-button>
+```
 
-  </p-wing-blank>
-</template>
+### 不可点击
 
-<script>
-
-export default {
-  name: 'ButtonDemo',
-  methods: {
-    handleClick: function () {
-      this.$toast.info('点击按钮')
-    }
-  }
-}
-</script>
-
+```html
+<p-button disabled>default disabled</p-button>
+<p-button type="primary" disabled>primary disabled</p-button>
 ```
 
 ## API

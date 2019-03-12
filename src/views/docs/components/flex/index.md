@@ -5,53 +5,28 @@
 ## 代码演示
 
 ```html
-<!-- *.vue -->
+<p-flex-wrap>
+  <p-flex-item><div class="flexItem">Block</div></p-flex-item>
+  <p-flex-item><div class="flexItem">Block</div></p-flex-item>
+  <p-flex-item><div class="flexItem">Block</div></p-flex-item>
+  <p-flex-item><div class="flexItem">Block</div></p-flex-item>
+</p-flex-wrap>
 
-<template>
-  <p-wing-blank>
-    <p-white-space></p-white-space>
-    <p-flex-wrap>
-      <p-flex-item><div class="flexItem">Block</div></p-flex-item>
-      <p-flex-item><div class="flexItem">Block</div></p-flex-item>
-      <p-flex-item><div class="flexItem">Block</div></p-flex-item>
-      <p-flex-item><div class="flexItem">Block</div></p-flex-item>
-    </p-flex-wrap>
-    <p-flex-wrap>
-      <p-flex-item><div class="flexItem">Block</div></p-flex-item>
-      <p-flex-item><div class="flexItem">Block</div></p-flex-item>
-      <p-flex-item><div class="flexItem">Block</div></p-flex-item>
-    </p-flex-wrap>
-    <p-flex-wrap>
-      <p-flex-item><div class="flexItem">Block</div></p-flex-item>
-    </p-flex-wrap>
-    <p-white-space></p-white-space>
-    <p-flex-wrap direction="column">
-      <p-flex-item><div class="flexItem">Block</div></p-flex-item>
-      <p-flex-item><div class="flexItem">Block</div></p-flex-item>
-      <p-flex-item><div class="flexItem">Block</div></p-flex-item>
-    </p-flex-wrap>
-  </p-wing-blank>
-</template>
+<p-flex-wrap>
+  <p-flex-item><div class="flexItem">Block</div></p-flex-item>
+  <p-flex-item><div class="flexItem">Block</div></p-flex-item>
+  <p-flex-item><div class="flexItem">Block</div></p-flex-item>
+</p-flex-wrap>
 
-<script>
-export default {
-  name: 'FlexDemo'
-}
-</script>
+<p-flex-wrap>
+  <p-flex-item><div class="flexItem">Block</div></p-flex-item>
+</p-flex-wrap>
 
-<style>
-.flexItem {
-  /* width: 100%; */
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  background-color: lightgray;
-  border-radius: 4px;
-  margin: 2px 10px;
-  padding: 0 4px;
-}
-</style>
-
+<p-flex-wrap direction="column">
+  <p-flex-item><div class="flexItem">Block</div></p-flex-item>
+  <p-flex-item><div class="flexItem">Block</div></p-flex-item>
+  <p-flex-item><div class="flexItem">Block</div></p-flex-item>
+</p-flex-wrap>
 ```
 
 ## API
