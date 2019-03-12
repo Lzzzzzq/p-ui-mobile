@@ -3,8 +3,8 @@ import ModalComponent from './src/index.jsx'
 const Modal = {}
 
 const defaultData = {
-  title: '标题',
-  message: '内容',
+  title: '',
+  message: '',
   type: 'basic',
   cancelText: '取消',
   okText: '确定',

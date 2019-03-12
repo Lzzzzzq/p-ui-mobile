@@ -59,9 +59,13 @@ const Modal = {
 
     const box = boxVisible ? (
       <div class={`${prefixCls}-box`}>
-        <div class={`${prefixCls}-title`}>
-          {title}
-        </div>
+        {
+          title ? (
+            <div class={`${prefixCls}-title`}>
+              {title}
+            </div>
+          ) : null
+        }
         <div class={`${prefixCls}-message`}>
           {jsx ? domNode(h) : message}
         </div>
