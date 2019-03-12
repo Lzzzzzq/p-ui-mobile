@@ -7,31 +7,31 @@
 ### 尺寸
 
 ```html
-  <p-badge>normal</p-badge>
-  <p-badge size="small">small</p-badge>
+<p-badge>normal</p-badge>
+<p-badge size="small">small</p-badge>
 ```
 
 ### 类型
 
 ```html
-  <p-badge>primary</p-badge>
-  <p-badge type="error">error</p-badge>
-  <p-badge type="warning">warning</p-badge>
-  <p-badge type="success">success</p-badge>
+<p-badge>primary</p-badge>
+<p-badge type="error">error</p-badge>
+<p-badge type="warning">warning</p-badge>
+<p-badge type="success">success</p-badge>
 ```
 
 ### 圆角
 
 ```html
-  <p-badge>normal</p-badge>
-  <p-badge radiusCircle>circle</p-badge>
+<p-badge>normal</p-badge>
+<p-badge radiusCircle>circle</p-badge>
 ```
 
 ### 带边框
 
 ```html
-  <p-badge>normal</p-badge>
-  <p-badge border>border</p-badge>
+<p-badge>normal</p-badge>
+<p-badge border>border</p-badge>
 ```
 
 ## API
