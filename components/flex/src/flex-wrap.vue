@@ -2,11 +2,11 @@
   <div
     :class="{
       [`${prefixCls}`]: true,
-      [`${prefixCls}-dir-${direction}`]: true,
-      [`${prefixCls}-${wrap}`]: true,
-      [`${prefixCls}-justify-${justify}`]: true,
-      [`${prefixCls}-align-${align}`]: true,
-      [`${prefixCls}-align-content-${alignContent}`]: true
+      [`${prefixCls}-dir-${direction}`]: direction,
+      [`${prefixCls}-${wrap}`]: wrap,
+      [`${prefixCls}-justify-${justify}`]: justify,
+      [`${prefixCls}-align-${align}`]: align,
+      [`${prefixCls}-align-content-${alignContent}`]: alignContent
     }"
   ><slot></slot></div>
 </template>
@@ -19,23 +19,23 @@ export default {
   props: {
     direction: {
       type: String,
-      default: () => 'row'
+      default: () => ''
     },
     wrap: {
       type: String,
-      default: () => 'nowrap'
+      default: () => ''
     },
     justify: {
       type: String,
-      default: () => 'start'
+      default: () => ''
     },
     align: {
       type: String,
-      default: () => 'center'
+      default: () => ''
     },
     alignContent: {
       type: String,
-      default: () => 'stretch'
+      default: () => ''
     }
   },
   computed: {
