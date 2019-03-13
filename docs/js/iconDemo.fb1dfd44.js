@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["iconDemo"],{a893:function(n,e,t){"use strict";t.r(e);var o=function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("p-icon",{attrs:{type:"icon-forward"}})},c=[],r={},a=r,i=t("2877"),l=Object(i["a"])(a,o,c,!1,null,null,null);e["default"]=l.exports}}]);
-//# sourceMappingURL=iconDemo.fb1dfd44.js.map

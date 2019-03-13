@@ -1,24 +1,25 @@
-import Toast from './toast'
-import Icon from './icon/src/index'
-import WingBlank from './wing-blank/src/index'
-import Button from './button/src/index'
-import WhiteSpace from './white-space/src/index'
-import FlexWrap from './flex/src/flex-wrap'
-import FlexItem from './flex/src/flex-item'
-import Drawer from './drawer/src/index'
-import Modal from './modal'
-import ActionSheet from './action-sheet/src/index'
-import Popover from './popover/src/index'
+import Icon from './icon/index'
+import WingBlank from './wing-blank/index'
+import Button from './button/index'
+import WhiteSpace from './white-space/index'
+import Flex from './flex/index'
+import Drawer from './drawer/index'
+import ActionSheet from './action-sheet/index'
+import Popover from './popover/index'
 import Badge from './badge/index'
 import Switch from './switch/index'
+
+import Toast from './toast/index'
+import Modal from './modal/index'
+
+import { version } from '../package.json'
 
 const components = [
   Icon,
   WingBlank,
   Button,
   WhiteSpace,
-  FlexWrap,
-  FlexItem,
+  Flex,
   Drawer,
   ActionSheet,
   Popover,
@@ -33,7 +34,7 @@ const methods = [
 
 const install = function (Vue, opts = {}) {
   components.map(component => {
-    Vue.component(component.name, component)
+    Vue.use(component)
   })
 
   methods.map(method => {
@@ -46,7 +47,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 const PUIMobile = {
-  version: '0.0.1',
+  version,
   install,
   ...components,
   ...methods

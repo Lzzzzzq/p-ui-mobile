@@ -24,16 +24,24 @@ module.exports = {
 }
 ```
 
+如需动画效果，需先安装 animate.css
+
+```bash
+yarn add animate.css
+```
+
 main.js
 
 ```javascript
 import Vue from 'vue'
+import animate from 'animate.css'
 import PUI from 'p-ui-mobile'
 import 'p-ui-mobile/lib/p-ui-mobile.css'
 import App from './App'
 Vue.config.productionTip = false
 
 Vue.use(PUI)
+Vue.use(animate)
 
 /* eslint-disable no-new */
 new Vue({
@@ -43,7 +51,7 @@ new Vue({
 })
 ```
 
-### 按需引入
+### 按需引入（暂未支持）
 
 需安装 babel-plugin-import
 

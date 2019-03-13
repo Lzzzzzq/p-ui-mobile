@@ -3,7 +3,9 @@ import App from './App.vue'
 import router from './router'
 
 import animated from 'animate.css'
-import LIB from '@LIB'
+// import LIB from '../lib/p-ui-mobile'
+// import '../lib/p-ui-mobile.css'
+import LIB from '../components/index'
 
 Vue.config.productionTip = false
 

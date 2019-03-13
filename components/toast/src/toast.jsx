@@ -1,4 +1,4 @@
-import Icon from '../../icon'
+import Icon from '../../icon/src/index.vue'
 import config from '../../_util/config'
 import './toast.less'
 

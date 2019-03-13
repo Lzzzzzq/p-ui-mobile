@@ -7,6 +7,7 @@
 
 <script>
 import config from '../../_util/config'
+import '../../_util/iconfont/iconfont.css'
 
 export default {
   name: 'PIcon',
@@ -23,5 +24,5 @@ export default {
 </script>
 
 <style lang="less">
-@import '../../_util/iconfont/iconfont.css';
+// @import '../../_util/iconfont/iconfont.css';
 </style>

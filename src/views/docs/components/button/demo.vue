@@ -53,3 +53,9 @@
 
   </p-wing-blank>
 </template>
+
+<script>
+export default {
+  name: 'ButtonDemo'
+}
+</script>
