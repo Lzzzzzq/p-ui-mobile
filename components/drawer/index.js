@@ -1,4 +1,4 @@
-import Component from './src/index'
+import Component from './drawer'
 
 export default {
   install: function (Vue, opts = {}) {

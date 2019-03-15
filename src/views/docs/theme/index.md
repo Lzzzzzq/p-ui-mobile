@@ -67,8 +67,8 @@ module.exports = {
     loaderOptions: {
       less: {
         modifyVars: {
-          'hd': '0.01rem',
-          'brand-primary-color': 'black'
+          '@hd': '0.01rem',
+          '@brand-primary-color': 'black'
         }
       }
     }
@@ -92,8 +92,8 @@ module.exports = {
       loader: 'less-loader',
       options: {
         modifyVars: {
-          'hd': '0.01rem',
-          'brand-primary-color': 'black'
+          '@hd': '0.01rem',
+          '@brand-primary-color': 'black'
         },
         javascriptEnabled: true,
       },

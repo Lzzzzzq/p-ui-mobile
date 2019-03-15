@@ -11,7 +11,7 @@ import Md from '@vc/md'
 // import Demo from '@vc/demo'
 import mdData from './index.md'
 import Icons from './icons'
-import cont from '@LIB/_util/iconfont/demo_fontclass.html'
+import cont from './demo_index.html'
 
 export default {
   components: {
@@ -28,10 +28,11 @@ export default {
   mounted: function () {
     let div = document.createElement('div')
     div.innerHTML = cont
-    let fontClass = div.getElementsByClassName('fontclass')
+    let wrap = div.getElementsByClassName('symbol')[0]
+    let fontClass = wrap.getElementsByClassName('code-name')
     fontClass = Array.prototype.slice.call(fontClass)
     let fontClassList = fontClass.map((item) => {
-      return item.innerHTML.replace('.', '')
+      return item.innerHTML.replace('#', '')
     })
     this.fontList = fontClassList
   }

@@ -1,4 +1,4 @@
-import Component from './src/index'
+import Component from './action-sheet'
 
 export default {
   install: function (Vue, opts = {}) {

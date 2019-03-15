@@ -1,5 +1,5 @@
-import FlexWrap from './src/flex-wrap'
-import FlexItem from './src/flex-item'
+import FlexWrap from './flex-wrap'
+import FlexItem from './flex-item'
 
 const Flex = {}
 

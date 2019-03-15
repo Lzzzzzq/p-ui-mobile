@@ -1,11 +1,11 @@
 {
   "name": "p-ui-mobile",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "lzzzzzq",
   "email": "lzzzzzq0721@gmail.com",
   "description": "基于 vue 的移动端组件库",
   "private": false,
-  "main": "lib/p-ui-mobile.js",
+  "main": "lib/index.js",
   "keywords": [
     "vue",
     "mobile",
@@ -28,24 +28,27 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build:lib": "rollup --config rollup.config.js",
+    "build:all": "yarn build:lib & yarn build:component",
+    "build:lib": "yarn node build/lib.js",
+    "build:component": "yarn node build/component.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0-beta.2",
-    "@vue/babel-preset-jsx": "^1.0.0-beta.2",
     "animate.css": "^3.7.0",
-    "babel-plugin-syntax-dynamic-import": "^6.18.0",
-    "classnames": "^2.2.6",
     "clipboard": "^2.0.4",
-    "highlight.js": "^9.14.2",
-    "html-loader": "^0.5.5",
-    "marked": "^0.6.0",
-    "text-loader": "^0.0.1",
     "vue": "^2.5.22",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
+    "text-loader": "^0.0.1",
+    "html-loader": "^0.5.5",
+    "highlight.js": "^9.14.2",
+    "classnames": "^2.2.6",
+    "marked": "^0.6.0",
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0-beta.2",
+    "@vue/babel-preset-jsx": "^1.0.0-beta.2",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "@babel/plugin-external-helpers": "^7.2.0",
     "@vue/cli-plugin-babel": "^3.4.0",
     "@vue/cli-plugin-eslint": "^3.4.0",
     "@vue/cli-service": "^3.4.0",
@@ -67,5 +70,6 @@
     "rollup-plugin-terser": "^4.0.4",
     "rollup-plugin-vue": "^4.7.2",
     "vue-template-compiler": "^2.5.21"
-  }
+  },
+  "license": "MIT"
 }

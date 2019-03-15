@@ -1,4 +1,4 @@
-import ToastComponent from './src/toast.jsx'
+import ToastComponent from './toast'
 
 const Toast = {}
 

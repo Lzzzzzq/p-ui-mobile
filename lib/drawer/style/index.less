@@ -1,0 +1,31 @@
+@import '../../style/index.less';
+
+@drawer-prefix-cls: ~'@{prefix-cls}-drawer';
+
+.@{drawer-prefix-cls}  {
+
+  &-wrap {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: @z-index-mask;
+    background-color: @bg-color-mask;
+  }
+  &-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // width: 60%;
+    background-color: @bg-color-card;
+  }
+  // &-left {
+  //   left: 0;
+  // }
+  // &-right {
+  //   right: 0;
+  // }
+}

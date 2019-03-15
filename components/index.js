@@ -13,6 +13,7 @@ import Toast from './toast/index'
 import Modal from './modal/index'
 
 import { version } from '../package.json'
+import './style'
 
 const components = [
   Icon,

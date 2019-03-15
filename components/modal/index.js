@@ -1,4 +1,4 @@
-import ModalComponent from './src/index.jsx'
+import ModalComponent from './modal.jsx'
 
 const Modal = {}
 

@@ -7,7 +7,7 @@
         :data-clipboard-text="item"
         @click="handleClickIcon(item)"
       >
-        <p-icon :class="item"></p-icon>
+        <p-icon :type="item"></p-icon>
         <div class="iconName">{{item}}</div>
       </div>
     </div>
@@ -83,7 +83,7 @@ export default {
         color: @text-color-white;
         cursor: pointer;
       }
-      i {
+      svg {
         font-size: 32px;
         margin: 12px 0 8px;
       }

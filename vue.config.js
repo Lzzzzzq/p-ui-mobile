@@ -21,6 +21,7 @@ module.exports = {
       .use('text-loader')
       .loader('text-loader')
       .end()
+
     config.module
       .rule('html')
       .test(/\.html$/)
@@ -28,19 +29,12 @@ module.exports = {
       .loader('html-loader')
       .end()
 
+    config.resolve.extensions
+      .add('.jsx')
+
     config.resolve.alias
       .set('@src', resolve('src'))
       .set('@LIB', resolve('components'))
       .set('@vc', resolve('src/components'))
   }
-  // css: {
-  //   loaderOptions: {
-  //     less: {
-  //       modifyVars: {
-  //         '@primary-color': 'black'
-  //       }
-  //     }
-  //   }
-  // }
-  // lintOnSave: false
 }

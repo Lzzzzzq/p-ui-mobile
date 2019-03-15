@@ -1,4 +1,4 @@
-import Component from './src/index'
+import Component from './popover'
 
 export default {
   install: function (Vue, opts = {}) {
