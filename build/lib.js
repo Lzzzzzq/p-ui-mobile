@@ -9,7 +9,7 @@ const cssnano = require('cssnano')
 const json = require('rollup-plugin-json')
 const { terser } = require('rollup-plugin-terser')
 
-const external = ['core-js', 'classnames', 'vue', 'babel']
+const external = ['core-js', 'classnames', 'babel']
 
 const inputOpt = (name) => {
   const conf = {
