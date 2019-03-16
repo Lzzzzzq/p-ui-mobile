@@ -31,8 +31,8 @@
 ### 带图标
 
 ```html
-<p-button icon="icon-pluscircleo" inline>icon</p-button>
-<p-button size="small" icon="icon-pluscircleo" inline>icon</p-button>
+<p-button icon="icon-addition" inline>icon</p-button>
+<p-button size="small" icon="icon-addition" inline>icon</p-button>
 ```
 
 ### 不可点击

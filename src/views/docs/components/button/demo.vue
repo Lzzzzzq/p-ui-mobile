@@ -37,9 +37,9 @@
     <div>带图标</div>
     <p-white-space></p-white-space>
 
-    <p-button icon="icon-pluscircleo" inline>icon</p-button>
+    <p-button icon="icon-addition" inline>icon</p-button>
     <p-white-space></p-white-space>
-    <p-button size="small" icon="icon-pluscircleo" inline>icon</p-button>
+    <p-button size="small" icon="icon-addition" inline>icon</p-button>
     <p-white-space></p-white-space>
 
     <p-white-space></p-white-space>
