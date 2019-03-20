@@ -4,7 +4,7 @@ import router from './router'
 
 import animated from 'animate.css'
 import LIB from '../components/index'
-import '../components/style'
+// import '../components/style'
 
 Vue.config.productionTip = false
 

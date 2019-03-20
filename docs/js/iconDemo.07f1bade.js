@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["iconDemo"],{a893:function(n,e,o){"use strict";o.r(e);var t=function(){var n=this,e=n.$createElement,o=n._self._c||e;return o("p-icon",{attrs:{type:"icon-forward"}})},c=[],a={name:"IconDemo"},r=a,i=o("2877"),l=Object(i["a"])(r,t,c,!1,null,null,null);e["default"]=l.exports}}]);
-//# sourceMappingURL=iconDemo.07f1bade.js.map

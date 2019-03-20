@@ -69,7 +69,8 @@ module.exports = {
         modifyVars: {
           '@hd': '0.01rem',
           '@brand-primary-color': 'black'
-        }
+        },
+        javascriptEnabled: true
       }
     }
   }
@@ -100,6 +101,21 @@ module.exports = {
     }],
   }],
 }
+```
+
+### 配置 less 变量文件
+
+根据上面两个配置方式配置好 *javascriptEnabled: true*
+
+```less
+// 本地 less 文件中
+
+// 引入官方 less 样式文件入口
+@import '~p-ui-mobile/lib/style/p-ui-mobile.less';
+
+// 覆盖样式变量
+@hd: 0.01rem;
+@brand-primary-color: black;
 ```
 
 

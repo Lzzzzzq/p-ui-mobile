@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["demo"],{"1b40":function(e,n,t){"use strict";t.r(n);var r=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("router-view")},o=[],u={name:"DemoWrap"},a=u,l=t("2877"),c=Object(l["a"])(a,r,o,!1,null,null,null);n["default"]=c.exports}}]);
-//# sourceMappingURL=demo.15b3007a.js.map
