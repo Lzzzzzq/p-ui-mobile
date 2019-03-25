@@ -8,6 +8,7 @@ import ActionSheet from './action-sheet/index'
 import Popover from './popover/index'
 import Badge from './badge/index'
 import Switch from './switch/index'
+import PullDown from './pull-down/index'
 
 import Toast from './toast/index'
 import Modal from './modal/index'
@@ -26,7 +27,8 @@ const components = [
   ActionSheet,
   Popover,
   Badge,
-  Switch
+  Switch,
+  PullDown
 ]
 
 const methods = [
