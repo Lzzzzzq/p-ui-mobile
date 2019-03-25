@@ -1,10 +1,9 @@
-import Icon from '../icon/icon'
 import config from '../_util/config'
 
 export default {
   name: 'PToast',
   components: {
-    Icon
+    Icon: () => import('../icon/icon')
   },
   computed: {
     prefixCls: () => `${config.prefixCls}-toast`

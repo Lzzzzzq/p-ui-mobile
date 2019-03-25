@@ -1,7 +1,7 @@
 <template>
   <div>
     <Md :mdData="mdData"></Md>
-    <Demo src="/demo/wingBlank"></Demo>
+    <Demo src="/demo/wing-blank"></Demo>
   </div>
 </template>
 
