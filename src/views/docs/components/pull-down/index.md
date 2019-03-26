@@ -41,10 +41,14 @@ export default {
 
 | 事件名称 | 说明 |
 | --- | --- |
-| pullDown | 下拉后触发的事件 |
+| pullDown | 下拉后触发的事件，将会传递一个对象，对象中带有 finish 事件，下拉后的异步操作执行完毕后，调用 finish 事件即可使组件恢复默认状态 |
 | pullStateChange | 下拉状态发生改变时触发，0 为默认，1 为下拉超过临界位置，2 为正在加载，3 为加载完成 |
 
-pullDown 事件将会传递一个对象，对象中带有 finish 事件，下拉后的异步操作执行完毕后，调用 finish 事件即可使组件恢复默认状态，也可以通过指定 ref 的方式，调用组件的  loadFinish 方法
+## ref 事件
+
+| 事件名称 | 说明 |
+| --- | --- |
+| loadFinish | 恢复组件为默认状态，功能与 pullDown 回调中的 finish 相同 |
 
 ## slot
 

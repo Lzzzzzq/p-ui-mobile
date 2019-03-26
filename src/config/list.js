@@ -16,5 +16,6 @@ export const componentList = [
   'switch',
   'toast',
   'white-space',
-  'wing-blank'
+  'wing-blank',
+  'reach-bottom'
 ]

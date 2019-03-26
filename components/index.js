@@ -9,6 +9,7 @@ import Popover from './popover/index'
 import Badge from './badge/index'
 import Switch from './switch/index'
 import PullDown from './pull-down/index'
+import ReachBottom from './reach-bottom/index'
 
 import Toast from './toast/index'
 import Modal from './modal/index'
@@ -28,7 +29,8 @@ const components = [
   Popover,
   Badge,
   Switch,
-  PullDown
+  PullDown,
+  ReachBottom
 ]
 
 const methods = [

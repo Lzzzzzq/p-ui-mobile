@@ -77,10 +77,19 @@ export default {
               name: 'ActionSheet 动作面板',
               path: '/docs/action-sheet',
               id: '/docs/action-sheet'
-            }, {
+            }
+          ]
+        }, {
+          name: 'Gesture',
+          child: [
+            {
               name: 'PullDown 下拉刷新',
               path: '/docs/pull-down',
               id: '/docs/pull-down'
+            }, {
+              name: 'ReachBottom 触底加载',
+              path: '/docs/reach-bottom',
+              id: '/docs/reach-bottom'
             }
           ]
         }
