@@ -37,10 +37,6 @@ export default {
 }
 </script>
 <style scoped>
-.wrap {
-  /* height: 400px;
-  overflow: auto; */
-}
 .item {
   padding: 20px;
   text-align: center;
