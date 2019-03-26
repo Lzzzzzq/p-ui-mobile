@@ -38,12 +38,11 @@
 
 <script>
 import config from '../_util/config'
-import Icon from '../icon/icon'
 
 export default {
   name: 'PButton',
   components: {
-    Icon
+    Icon: () => import('../icon/icon')
   },
   props: {
     type: {

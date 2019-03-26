@@ -8,12 +8,21 @@
       <div class="pMain">
         <iframe :src="url" frameborder="0"></iframe>
       </div>
-      <div class="pHome"></div>
+      <div class="pHome">
+        <img src="../../assets/qrcode.png" class="pHomeIcon" alt="" @click.self="handleShowQrcode">
+        <div class="qrCodeWrap" :class="{
+          'qrCodeActive': qrcodeShow
+        }">
+          <img :src="qrcodeUrl" alt="">
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import QRCode from 'qrcode'
+
 export default {
   name: 'Demo',
   props: {
@@ -21,9 +30,29 @@ export default {
       type: String
     }
   },
+  data () {
+    return {
+      qrcodeShow: false,
+      qrcodeUrl: ''
+    }
+  },
   computed: {
     url: function () {
-      return `//${window.location.host + window.location.pathname}#${this.src}`
+      return `${window.location.protocol}//${window.location.host + window.location.pathname}#${this.src}`
+    }
+  },
+  mounted: function () {
+    QRCode.toDataURL(this.url)
+      .then(url => {
+        this.qrcodeUrl = url
+      })
+      .catch(err => {
+        console.error(err)
+      })
+  },
+  methods: {
+    handleShowQrcode: function () {
+      this.qrcodeShow = !this.qrcodeShow
     }
   }
 }

@@ -20,21 +20,12 @@ export default {
               id: '/docs/flex'
             }, {
               name: 'WingBlank 两翼留白',
-              path: '/docs/wingBlank',
-              id: '/docs/wingBlank'
+              path: '/docs/wing-blank',
+              id: '/docs/wing-blank'
             }, {
               name: 'WhiteSpace 上下留白',
-              path: '/docs/whiteSpace',
-              id: '/docs/whiteSpace'
-            }
-          ]
-        }, {
-          name: 'Navigation',
-          child: [
-            {
-              name: 'Drawer 抽屉',
-              path: '/docs/drawer',
-              id: '/docs/drawer'
+              path: '/docs/white-space',
+              id: '/docs/white-space'
             }
           ]
         }, {
@@ -59,6 +50,19 @@ export default {
             }
           ]
         }, {
+          name: 'Navigation',
+          child: [
+            {
+              name: 'Drawer 抽屉',
+              path: '/docs/drawer',
+              id: '/docs/drawer'
+            }, {
+              name: 'Popover 气泡',
+              path: '/docs/popover',
+              id: '/docs/popover'
+            }
+          ]
+        }, {
           name: 'Feedback',
           child: [
             {
@@ -71,12 +75,21 @@ export default {
               id: '/docs/modal'
             }, {
               name: 'ActionSheet 动作面板',
-              path: '/docs/actionSheet',
-              id: '/docs/actionSheet'
+              path: '/docs/action-sheet',
+              id: '/docs/action-sheet'
+            }
+          ]
+        }, {
+          name: 'Gesture',
+          child: [
+            {
+              name: 'PullDown 下拉刷新',
+              path: '/docs/pull-down',
+              id: '/docs/pull-down'
             }, {
-              name: 'Popover 气泡',
-              path: '/docs/popover',
-              id: '/docs/popover'
+              name: 'ReachBottom 触底加载',
+              path: '/docs/reach-bottom',
+              id: '/docs/reach-bottom'
             }
           ]
         }

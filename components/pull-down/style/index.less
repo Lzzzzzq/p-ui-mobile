@@ -1,0 +1,22 @@
+@import '../../style/index.less';
+
+@pull-down-prefix-cls: ~'@{prefix-cls}-pull-down';
+
+
+.@{pull-down-prefix-cls} {
+
+  &-wrap {
+    position: relative;
+
+  }
+  &-content {
+  }
+  &-top-default {
+    color: @text-color-ass;
+    font-size: @font-size-sm;
+    text-align: center;
+  }
+  &-animate {
+    transition: transform 0.4s;
+  }
+}
