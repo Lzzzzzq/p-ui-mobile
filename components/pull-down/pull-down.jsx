@@ -74,7 +74,12 @@ export default {
       /**
        * 顶部加载元素高度
        */
-      topDomHeight: 48
+      topDomHeight: 48,
+
+      /**
+       * 定时器
+       */
+      timer: null
     }
   },
   mounted: function () {
@@ -113,6 +118,11 @@ export default {
       }
       return window
     },
+
+    /**
+     * 获取元素滚动距离
+     * @param {Object} element html元素
+     */
     getScrollTop (element) {
       if (element === window) {
         return Math.max(window.pageYOffset || 0, document.documentElement.scrollTop)
@@ -143,6 +153,7 @@ export default {
      * 手指开始接触
      */
     handleTouchStart: function (e) {
+      if (!this.pullDown) return
       let touch = e.touches[0]
       /**
        * 记录开始滑动时的位置
@@ -156,7 +167,13 @@ export default {
      * 手指滑动
      */
     handleTouchMove: function (e) {
-      if (!this.pullDown) return
+      /**
+       * pullState = 0 默认状态
+       * pullState = 1 滑动距离超过顶部加载提示
+       * pullState = 2 正在加载中
+       * pullState = 3 加载完成但还未恢复初始状态
+       */
+      if (!this.pullDown || this.pullState === 2 || this.pullState === 3) return
       let touch = e.touches[0]
       this.currentPos = touch.clientY
       this.currentScrollPos = this.getScrollTop(this.scrollTarget)
@@ -168,8 +185,6 @@ export default {
         this.translate = distance
         if (distance > this.topDomHeight) {
           this.pullState = 1
-        } else {
-          this.pullState = 0
         }
       }
     },
@@ -178,6 +193,7 @@ export default {
      * 手指停止接触
      */
     handleTouchEnd: function (e) {
+      if (!this.pullDown || this.pullState === 2) return
       if (this.translate > 0) {
         e.preventDefault()
         e.stopPropagation()
@@ -199,13 +215,18 @@ export default {
      */
     loadFinish: function () {
       this.pullState = 3
-      setTimeout(() => {
-        this.translate = 0
-        setTimeout(() => {
-          this.animate = false
-          this.pullState = 0
-        }, 300)
-      }, 100)
+      this.translate = 0
+      this.animate = true
+      clearTimeout(this.timer)
+      this.timer = setTimeout(() => {
+        this.transitionEnd()
+      }, 400)
+    },
+
+    transitionEnd: function () {
+      this.pullState = 0
+      this.animate = false
+      clearTimeout(this.timer)
     }
   },
   render (h) {
@@ -243,6 +264,7 @@ export default {
             })
           }
           style={`transform: translateY(${translate}px)`}
+          ref="wrapper"
         >
           {topDom}
           {this.$slots.default || null}

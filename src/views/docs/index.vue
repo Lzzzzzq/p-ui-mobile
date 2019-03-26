@@ -31,6 +31,7 @@ export default {
   .docsMain {
     flex: 1;
     display: flex;
+    overflow: hidden;
   }
 }
 </style>

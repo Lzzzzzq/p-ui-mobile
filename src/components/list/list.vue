@@ -44,7 +44,7 @@ export default {
 .wrap {
   flex: 0 0 260px;
   border-right: 1px solid @line-color-light;
-  padding-top: 30px;
+  padding: 30px 0;
   box-sizing: border-box;
   overflow-y: hidden;
   background-color: #fff;
