@@ -12,7 +12,7 @@ const fs = require('fs-extra')
 
 const componentDir = 'components'
 const toDir = 'lib'
-const external = ['core-js', 'classnames', 'babel']
+const external = ['core-js', 'babel']
 
 const inputOpt = () => {
   const conf = {
