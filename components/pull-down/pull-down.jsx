@@ -242,11 +242,11 @@ export default {
     } = this
 
     const topDom = this.$slots.top ? (
-      <div class={[`${prefixCls}-top-slot`]} ref="top">
+      <div class={[`${prefixCls}-top-slot`]} ref="top" style={`top: ${-(topDomHeight)}px`}>
         {this.$slots.top}
       </div>
     ) : (
-      <div class={[`${prefixCls}-top-default`]} style={`height: ${topDomHeight}px; line-height: ${topDomHeight}px`} ref="top">
+      <div class={[`${prefixCls}-top-default`]} style={`height: ${topDomHeight}px; line-height: ${topDomHeight}px; top: ${-(topDomHeight)}px`} ref="top">
         {loadText}
       </div>
     )
@@ -254,7 +254,6 @@ export default {
     return (
       <div
         class={[`${prefixCls}-wrap`]}
-        style={`margin-top: ${-(topDomHeight)}px`}
       >
         <div
           class={

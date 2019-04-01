@@ -10,11 +10,17 @@
 
   }
   &-content {
+    position: relative;
   }
   &-top-default {
     color: @text-color-ass;
     font-size: @font-size-sm;
     text-align: center;
+  }
+  &-top-default,&-top-slot {
+    position: absolute;
+    left: 0;
+    right: 0;
   }
   &-animate {
     transition: transform 0.4s;
